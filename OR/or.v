@@ -29,7 +29,7 @@ Notation "a .[ i ]" := ((a:vec _) (i:fin _)) (at level 2).
 
 (* `fin 0` is unique  *)
 Lemma fin_0_unique : forall i : fin 0, i = tt.
-Proof. intros. destruct i. auto. Qed.
+Proof. intros. induction i. auto. Qed.
 
 (* Two `fin 0` is equal  *)
 Lemma fin_0_eq : forall i j : fin 0, i = j.
@@ -38,16 +38,18 @@ Proof. intros. destruct i,j. auto. Qed.
 (* Two `fin (S n)` is equal, iff value is equal *)
 Lemma fin_S_eq : forall {n} x1 x2 (H1 : x1 < S n) (H2 : x2 < S n),
     exist (fun i => i < S n) x1 H1 = exist _ x2 H2 <-> x1 = x2.
-Proof.
+Proof. 
   intros. split; intros.
   - inversion H. auto.
-  - subst. f_equal. apply proof_irrelevance.
+  - subst. apply f_equal. apply proof_irrelevance.  
 Qed.
 
 (* Two `fin (S n)` is not equal, iff, value is not equal  *)
 Lemma fin_S_neq : forall {n} x1 x2 (H1 : x1 < S n) (H2 : x2 < S n),
     exist (fun i => i < S n) x1 H1 <> exist _ x2 H2 <-> x1 <> x2.
-Proof. intros. rewrite fin_S_eq. reflexivity. Qed.
+Proof.
+  intros. rewrite fin_S_eq. reflexivity.
+Qed.
 
 Definition finEqdec : forall {n} (i j : fin n), {i = j} + {i <> j}.
 Proof.
@@ -87,23 +89,25 @@ fin (S n0) 是一个 sig 类型的实例，它代表的自然数 f 确实小于�
 Lemma fin_eq_iff : forall {n} (f1 f2 : fin n), f1 = f2 <-> fin2nat f1 = fin2nat f2.
 Proof.
   intros. destruct n.
-  - simpl. split; intros; auto. apply fin_0_eq.
-  - destruct f1,f2; simpl; split; intros.
-    + apply fin_S_eq in H; auto.
-    + apply fin_S_eq; auto.
+  - destruct f1, f2. simpl. split; reflexivity.
+  - destruct f1, f2. simpl. apply fin_S_eq.
 Qed.
 
 Lemma fin_neq_iff : forall {n} (f1 f2 : fin n), f1 <> f2 <-> fin2nat f1 <> fin2nat f2.
-Proof. intros. rewrite fin_eq_iff. split; auto. Qed.
+Proof.  intros. rewrite fin_eq_iff. split; auto. Qed.
 
 Lemma fin2nat_lt_Sn : forall {n} (f : fin (S n)), fin2nat f < S n.
-Proof. intros. simpl. destruct f; simpl. auto. Qed.
+Proof. intros. simpl. destruct f. simpl. auto. Qed.
 
 Lemma fin2nat_lt_n_gt0 : forall {n} (f : fin n), 0 < n -> fin2nat f < n.
-Proof. intros. destruct n. lia. apply fin2nat_lt_Sn. Qed.
+Proof.
+  intros. destruct n.
+  - simpl. auto. 
+  - apply fin2nat_lt_Sn.
+Qed.
 
 Lemma fin2nat_fin0 : forall {n}, @fin2nat n fin0 = 0.
-Proof. intros. destruct n; auto. Qed.
+Proof. intros. destruct n; simpl; reflexivity. Qed.
 
 Definition nat2fin {n} (i : nat) : fin n.
   destruct n. apply tt.                     (* if n=0, tt : fin 0  *)
@@ -113,7 +117,7 @@ Definition nat2fin {n} (i : nat) : fin n.
 Defined.
 
 (** Convert from [nat] to [fin]
-    nat类型转为fin n类型 *)
+    nat类型转为fin S n类型 *)
 Definition nat2finS {n} (i : nat) : fin (S n).
   destruct (i ?< S n).
   - refine [|i]. auto.                      (* if i< n, {i | i < S n} *)
@@ -133,21 +137,25 @@ Definition finseq (n : nat) : list (fin n) :=
 
 Lemma nat2fin_fin2nat_id : forall n (f : fin n), nat2fin (fin2nat f) = f.
 Proof.
-  destruct n. intros. simpl. apply fin_0_eq.
-  intros. destruct f. simpl fin2nat. unfold nat2fin. destruct (lt_ge_dec).
-  apply fin_S_eq; auto. lia. 
+  intros. destruct n. 
+  - simpl. destruct f. reflexivity.
+  - destruct f. simpl fin2nat. simpl. destruct (x ?< S n).
+    * apply fin_S_eq. reflexivity. 
+    * lia.  
 Qed.
   
 Lemma fin2nat_nat2fin_id : forall n i, i < n -> fin2nat (@nat2fin n i) = i.
 Proof.
   intros. unfold nat2fin, fin2nat. destruct n. lia.
-  destruct lt_ge_dec; simpl; auto. lia.
+  destruct (i ?< S n); simpl. reflexivity. lia.
 Qed.
   
 Lemma nat2fin_overflow : forall {n} i, i >= n -> @nat2fin n i = fin0.
 Proof.
-  intros. unfold nat2fin. destruct n. apply fin_0_eq.
-  destruct (i ?< S n). lia. cbn. apply fin_S_eq; auto.
+  intros.
+  unfold nat2fin.
+  destruct n. apply fin_0_eq.
+  destruct (i ?<S n). lia. cbn. reflexivity.
 Qed.
   
 Lemma fin2nat_nat2fin_overflow : forall n i, i >= n -> fin2nat (@nat2fin n i) = 0.
@@ -173,7 +181,7 @@ Section ff2f_f2ff.
   Lemma ff2f_f2ff_id : forall {n} (f : nat -> A) i, i < n -> @ff2f n (f2ff f) i = f i.
   Proof. intros. unfold f2ff,ff2f. rewrite fin2nat_nat2fin_id; auto. Qed.
   
-End ff2f_f2ff.
+End ff2f_f2ff.   
 
 Notation "v .1" := (v (@nat2finS _ 0)) (at level 2).
 Notation "v .2" := (v (@nat2finS _ 1)) (at level 2).
