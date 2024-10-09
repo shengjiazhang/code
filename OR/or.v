@@ -708,4 +708,4 @@ Definition q2m (q : quat) := let '(w,x,y,z) := (q.W,q.X,q.Y,q.Z) in
 Lemma q2m_spec : forall (q : quat) (v : vec 3),  qunit q -> qrotv q v = (q2m q) *v v.
 Proof.
 Admitted.
- 
+
