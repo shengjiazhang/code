@@ -1,1 +1,0 @@
-Require Import Ltac2.Char.
