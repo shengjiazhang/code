@@ -1,0 +1,2864 @@
+DIGEST 299395ded3a576e8af15f8ff98474c90
+FTop.or
+R15:28 Coq.Lists.List <> <> lib
+R46:60 Coq.Arith.Arith <> <> lib
+R78:89 Coq.Init.Nat <> <> lib
+R99:111 Coq.Lists.List ListNotations <> mod
+R129:131 Coq.micromega.Lia <> <> lib
+R149:163 Coq.Reals.Reals <> <> lib
+R181:198 Coq.Logic.PropExtensionality <> <> lib
+R216:225 Coq.extraction.Extraction <> <> lib
+prf 235:245 <> lt_imply_gt
+R262:264 Coq.Init.Datatypes <> nat ind
+binder 256:256 <> n:1
+binder 258:258 <> m:2
+R272:275 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R268:270 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R267:267 Top.or <> n:1 var
+R271:271 Top.or <> m:2 var
+R277:279 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R276:276 Top.or <> m:2 var
+R280:280 Top.or <> n:1 var
+prf 315:325 <> gt_imply_lt
+R342:344 Coq.Init.Datatypes <> nat ind
+binder 336:336 <> n:3
+binder 338:338 <> m:4
+R352:355 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R348:350 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R347:347 Top.or <> n:3 var
+R351:351 Top.or <> m:4 var
+R357:359 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R356:356 Top.or <> m:4 var
+R360:360 Top.or <> n:3 var
+prf 395:403 <> lt_ge_dec
+R420:422 Coq.Init.Datatypes <> nat ind
+binder 414:414 <> x:5
+binder 416:416 <> y:6
+R425:425 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R431:435 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R442:442 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R427:429 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R426:426 Top.or <> x:5 var
+R430:430 Top.or <> y:6 var
+R437:440 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R436:436 Top.or <> x:5 var
+R441:441 Top.or <> y:6 var
+R470:478 Coq.Arith.Compare_dec <> le_gt_dec def
+R470:478 Coq.Arith.Compare_dec <> le_gt_dec def
+R517:525 Top.or <> lt_ge_dec thm
+not 508:508 <> :::x_'?<'_x
+def 555:557 <> fin
+R564:566 Coq.Init.Datatypes <> nat ind
+binder 560:560 <> n:7
+R580:580 Top.or <> n:7 var
+R591:591 Coq.Init.Datatypes <> O constr
+R596:599 Coq.Init.Datatypes <> unit ind
+R605:605 Coq.Init.Datatypes <> S constr
+R613:613 Coq.Init.Specif <> ::type_scope:'{'_x_'|'_x_'}' not
+R615:617 Coq.Init.Specif <> ::type_scope:'{'_x_'|'_x_'}' not
+R623:623 Coq.Init.Specif <> ::type_scope:'{'_x_'|'_x_'}' not
+binder 614:614 <> i:9
+R619:621 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R618:618 Top.or <> i:9 var
+R622:622 Top.or <> n:7 var
+R655:657 Top.or <> fin def
+not 641:641 <> :::'''I_'_x
+def 688:690 <> vec
+binder 693:693 <> A:10
+R708:710 Coq.Init.Datatypes <> nat ind
+binder 704:704 <> n:11
+R721:724 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R716:718 Top.or <> fin def
+R720:720 Top.or <> n:11 var
+R725:725 Top.or <> A:10 var
+R755:757 Top.or <> vec def
+R765:767 Top.or <> fin def
+not 737:737 <> :::x_'.['_x_']'
+prf 819:830 <> fin_0_unique
+R845:847 Top.or <> fin def
+binder 841:841 <> i:12
+R853:855 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R852:852 Top.or <> i:12 var
+R856:857 Coq.Init.Datatypes <> tt constr
+prf 934:941 <> fin_0_eq
+R958:960 Top.or <> fin def
+binder 952:952 <> i:13
+binder 954:954 <> j:14
+R966:968 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R965:965 Top.or <> i:13 var
+R969:969 Top.or <> j:14 var
+prf 1070:1077 <> fin_S_eq
+binder 1089:1089 <> n:15
+binder 1092:1093 <> x1:16
+binder 1095:1096 <> x2:17
+R1106:1108 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1104:1105 Top.or <> x1:16 var
+R1109:1109 Coq.Init.Datatypes <> S constr
+R1111:1111 Top.or <> n:15 var
+binder 1099:1100 <> H1:18
+R1122:1124 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1120:1121 Top.or <> x2:17 var
+R1125:1125 Coq.Init.Datatypes <> S constr
+R1127:1127 Top.or <> n:15 var
+binder 1115:1116 <> H2:19
+R1181:1185 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1165:1167 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1135:1139 Coq.Init.Specif <> exist constr
+R1163:1164 Top.or <> H1:18 var
+R1160:1161 Top.or <> x1:16 var
+binder 1146:1146 <> i:20
+R1152:1154 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1151:1151 Top.or <> i:20 var
+R1155:1155 Coq.Init.Datatypes <> S constr
+R1157:1157 Top.or <> n:15 var
+R1168:1172 Coq.Init.Specif <> exist constr
+R1179:1180 Top.or <> H2:19 var
+R1176:1177 Top.or <> x2:17 var
+R1188:1190 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1186:1187 Top.or <> x1:16 var
+R1191:1192 Top.or <> x2:17 var
+R1268:1274 Coq.Init.Logic <> f_equal thm
+R1268:1274 Coq.Init.Logic <> f_equal thm
+R1283:1299 Coq.Logic.PropExtensionality <> proof_irrelevance thm
+R1283:1299 Coq.Logic.PropExtensionality <> proof_irrelevance thm
+prf 1377:1385 <> fin_S_neq
+binder 1397:1397 <> n:21
+binder 1400:1401 <> x1:22
+binder 1403:1404 <> x2:23
+R1414:1416 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1412:1413 Top.or <> x1:22 var
+R1417:1417 Coq.Init.Datatypes <> S constr
+R1419:1419 Top.or <> n:21 var
+binder 1407:1408 <> H1:24
+R1430:1432 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1428:1429 Top.or <> x2:23 var
+R1433:1433 Coq.Init.Datatypes <> S constr
+R1435:1435 Top.or <> n:21 var
+binder 1423:1424 <> H2:25
+R1490:1494 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1473:1476 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1443:1447 Coq.Init.Specif <> exist constr
+R1471:1472 Top.or <> H1:24 var
+R1468:1469 Top.or <> x1:22 var
+binder 1454:1454 <> i:26
+R1460:1462 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1459:1459 Top.or <> i:26 var
+R1463:1463 Coq.Init.Datatypes <> S constr
+R1465:1465 Top.or <> n:21 var
+R1477:1481 Coq.Init.Specif <> exist constr
+R1488:1489 Top.or <> H2:25 var
+R1485:1486 Top.or <> x2:23 var
+R1497:1500 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1495:1496 Top.or <> x1:22 var
+R1501:1502 Top.or <> x2:23 var
+R1530:1537 Top.or <> fin_S_eq thm
+R1530:1537 Top.or <> fin_S_eq thm
+R1530:1537 Top.or <> fin_S_eq thm
+def 1570:1577 <> finEqdec
+binder 1589:1589 <> n:27
+R1599:1601 Top.or <> fin def
+R1603:1603 Top.or <> n:27 var
+binder 1593:1593 <> i:28
+binder 1595:1595 <> j:29
+R1607:1607 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1613:1617 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1624:1624 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1609:1611 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1608:1608 Top.or <> i:28 var
+R1612:1612 Top.or <> j:29 var
+R1619:1622 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1618:1618 Top.or <> i:28 var
+R1623:1623 Top.or <> j:29 var
+R1717:1726 Coq.Arith.PeanoNat Nat eq_dec thm
+R1717:1726 Coq.Arith.PeanoNat Nat eq_dec thm
+R1757:1764 Top.or <> fin_S_eq thm
+R1757:1764 Top.or <> fin_S_eq thm
+R1790:1798 Top.or <> fin_S_neq thm
+R1790:1798 Top.or <> fin_S_neq thm
+R1823:1825 Top.or <> fin def
+R1836:1838 Top.or <> vec def
+R1850:1858 Top.or <> lt_ge_dec thm
+R1885:1889 Coq.Init.Specif <> exist constr
+not 1871:1871 <> :::'['_'|'_x_']'
+def 1962:1965 <> fin0
+R1972:1974 Coq.Init.Datatypes <> nat ind
+binder 1968:1968 <> n:30
+R1979:1981 Top.or <> fin def
+R1983:1983 Top.or <> n:30 var
+R1996:1996 Top.or <> n:30 var
+R2007:2007 Coq.Init.Datatypes <> O constr
+R2012:2013 Coq.Init.Datatypes <> tt constr
+R2019:2019 Coq.Init.Datatypes <> S constr
+R2027:2031 Coq.Init.Specif <> exist constr
+R2038:2050 Coq.Arith.PeanoNat Nat lt_0_succ thm
+def 2110:2116 <> fin2nat
+binder 2119:2119 <> n:32
+R2129:2132 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2124:2126 Top.or <> fin def
+R2128:2128 Top.or <> n:32 var
+R2133:2135 Coq.Init.Datatypes <> nat ind
+R2148:2148 Top.or <> n:32 var
+R2159:2159 Coq.Init.Datatypes <> O constr
+R2232:2232 Coq.Init.Datatypes <> S constr
+R2249:2251 Top.or <> fin def
+R2254:2254 Coq.Init.Datatypes <> S constr
+binder 2245:2245 <> f:34
+R2264:2272 Coq.Init.Specif <> proj1_sig def
+R2274:2274 Top.or <> f:34 var
+prf 2783:2792 <> fin_eq_iff
+binder 2804:2804 <> n:35
+R2816:2818 Top.or <> fin def
+R2820:2820 Top.or <> n:35 var
+binder 2808:2809 <> f1:36
+binder 2811:2812 <> f2:37
+R2831:2835 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R2826:2828 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2824:2825 Top.or <> f1:36 var
+R2829:2830 Top.or <> f2:37 var
+R2846:2848 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2836:2842 Top.or <> fin2nat def
+R2844:2845 Top.or <> f1:36 var
+R2849:2855 Top.or <> fin2nat def
+R2857:2858 Top.or <> f2:37 var
+R2972:2979 Top.or <> fin_S_eq thm
+R2972:2979 Top.or <> fin_S_eq thm
+prf 2994:3004 <> fin_neq_iff
+binder 3016:3016 <> n:38
+R3028:3030 Top.or <> fin def
+R3032:3032 Top.or <> n:38 var
+binder 3020:3021 <> f1:39
+binder 3023:3024 <> f2:40
+R3044:3048 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R3038:3041 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3036:3037 Top.or <> f1:39 var
+R3042:3043 Top.or <> f2:40 var
+R3059:3062 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3049:3055 Top.or <> fin2nat def
+R3057:3058 Top.or <> f1:39 var
+R3063:3069 Top.or <> fin2nat def
+R3071:3072 Top.or <> f2:40 var
+R3099:3108 Top.or <> fin_eq_iff thm
+R3099:3108 Top.or <> fin_eq_iff thm
+R3099:3108 Top.or <> fin_eq_iff thm
+prf 3136:3148 <> fin2nat_lt_Sn
+binder 3160:3160 <> n:41
+R3168:3170 Top.or <> fin def
+R3173:3173 Coq.Init.Datatypes <> S constr
+R3175:3175 Top.or <> n:41 var
+binder 3164:3164 <> f:42
+R3189:3191 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R3180:3186 Top.or <> fin2nat def
+R3188:3188 Top.or <> f:42 var
+R3192:3192 Coq.Init.Datatypes <> S constr
+R3194:3194 Top.or <> n:41 var
+prf 3256:3271 <> fin2nat_lt_n_gt0
+binder 3283:3283 <> n:43
+R3291:3293 Top.or <> fin def
+R3295:3295 Top.or <> n:43 var
+binder 3287:3287 <> f:44
+R3304:3307 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3300:3302 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R3303:3303 Top.or <> n:43 var
+R3317:3319 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R3308:3314 Top.or <> fin2nat def
+R3316:3316 Top.or <> f:44 var
+R3320:3320 Top.or <> n:43 var
+R3380:3392 Top.or <> fin2nat_lt_Sn thm
+R3380:3392 Top.or <> fin2nat_lt_Sn thm
+prf 3407:3418 <> fin2nat_fin0
+binder 3430:3430 <> n:45
+R3449:3451 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3435:3441 Top.or <> fin2nat def
+R3443:3443 Top.or <> n:45 var
+R3445:3448 Top.or <> fin0 def
+def 3519:3525 <> nat2fin
+binder 3528:3528 <> n:46
+R3536:3538 Coq.Init.Datatypes <> nat ind
+binder 3532:3532 <> i:47
+R3543:3545 Top.or <> fin def
+R3547:3547 Top.or <> n:46 var
+R3570:3571 Coq.Init.Datatypes <> tt constr
+R3570:3571 Coq.Init.Datatypes <> tt constr
+R3633:3636 Top.or <> :::x_'?<'_x not
+R3637:3637 Coq.Init.Datatypes <> S constr
+R3633:3636 Top.or <> :::x_'?<'_x not
+R3637:3637 Coq.Init.Datatypes <> S constr
+R3654:3655 Top.or <> :::'['_'|'_x_']' not
+R3657:3657 Top.or <> :::'['_'|'_x_']' not
+R3654:3655 Top.or <> :::'['_'|'_x_']' not
+R3657:3657 Top.or <> :::'['_'|'_x_']' not
+R3727:3728 Top.or <> :::'['_'|'_x_']' not
+R3730:3730 Top.or <> :::'['_'|'_x_']' not
+R3727:3728 Top.or <> :::'['_'|'_x_']' not
+R3730:3730 Top.or <> :::'['_'|'_x_']' not
+R3739:3751 Coq.Arith.PeanoNat Nat lt_0_succ thm
+R3739:3751 Coq.Arith.PeanoNat Nat lt_0_succ thm
+def 3878:3885 <> nat2finS
+binder 3888:3888 <> n:48
+R3896:3898 Coq.Init.Datatypes <> nat ind
+binder 3892:3892 <> i:49
+R3903:3905 Top.or <> fin def
+R3908:3908 Coq.Init.Datatypes <> S constr
+R3910:3910 Top.or <> n:48 var
+R3927:3930 Top.or <> :::x_'?<'_x not
+R3931:3931 Coq.Init.Datatypes <> S constr
+R3927:3930 Top.or <> :::x_'?<'_x not
+R3931:3931 Coq.Init.Datatypes <> S constr
+R3948:3949 Top.or <> :::'['_'|'_x_']' not
+R3951:3951 Top.or <> :::'['_'|'_x_']' not
+R3948:3949 Top.or <> :::'['_'|'_x_']' not
+R3951:3951 Top.or <> :::'['_'|'_x_']' not
+R4021:4022 Top.or <> :::'['_'|'_x_']' not
+R4024:4024 Top.or <> :::'['_'|'_x_']' not
+R4021:4022 Top.or <> :::'['_'|'_x_']' not
+R4024:4024 Top.or <> :::'['_'|'_x_']' not
+R4033:4045 Coq.Arith.PeanoNat Nat lt_0_succ thm
+R4033:4045 Coq.Arith.PeanoNat Nat lt_0_succ thm
+R4112:4119 Top.or <> nat2finS def
+not 4102:4102 <> :::'#'_x
+R4148:4154 Top.or <> fin2nat def
+R4160:4167 Top.or <> nat2finS def
+def 4229:4234 <> finseq
+R4241:4243 Coq.Init.Datatypes <> nat ind
+binder 4237:4237 <> n:50
+R4248:4251 Coq.Init.Datatypes <> list ind
+R4254:4256 Top.or <> fin def
+R4258:4258 Top.or <> n:50 var
+R4273:4273 Top.or <> n:50 var
+R4285:4285 Coq.Init.Datatypes <> O constr
+R4290:4291 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R4297:4297 Coq.Init.Datatypes <> S constr
+R4305:4307 Coq.Lists.List <> map def
+R4324:4326 Coq.Lists.List <> seq def
+R4330:4330 Top.or <> n:50 var
+R4311:4318 Top.or <> nat2finS def
+prf 4347:4364 <> nat2fin_fin2nat_id
+binder 4375:4375 <> n:52
+R4382:4384 Top.or <> fin def
+R4386:4386 Top.or <> n:52 var
+binder 4378:4378 <> f:53
+R4409:4411 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4390:4396 Top.or <> nat2fin def
+R4399:4405 Top.or <> fin2nat def
+R4407:4407 Top.or <> f:53 var
+R4412:4412 Top.or <> f:53 var
+R4503:4509 Top.or <> fin2nat def
+R4530:4533 Top.or <> :::x_'?<'_x not
+R4534:4534 Coq.Init.Datatypes <> S constr
+R4530:4533 Top.or <> :::x_'?<'_x not
+R4534:4534 Coq.Init.Datatypes <> S constr
+R4552:4559 Top.or <> fin_S_eq thm
+R4552:4559 Top.or <> fin_S_eq thm
+prf 4603:4620 <> fin2nat_nat2fin_id
+binder 4631:4631 <> n:54
+binder 4633:4633 <> i:55
+R4641:4644 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4637:4639 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R4636:4636 Top.or <> i:55 var
+R4640:4640 Top.or <> n:54 var
+R4667:4669 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4645:4651 Top.or <> fin2nat def
+R4655:4661 Top.or <> nat2fin def
+R4663:4663 Top.or <> n:54 var
+R4665:4665 Top.or <> i:55 var
+R4670:4670 Top.or <> i:55 var
+R4697:4703 Top.or <> nat2fin def
+R4706:4712 Top.or <> fin2nat def
+R4745:4748 Top.or <> :::x_'?<'_x not
+R4749:4749 Coq.Init.Datatypes <> S constr
+R4745:4748 Top.or <> :::x_'?<'_x not
+R4749:4749 Coq.Init.Datatypes <> S constr
+prf 4794:4809 <> nat2fin_overflow
+binder 4821:4821 <> n:56
+binder 4824:4824 <> i:57
+R4833:4836 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4828:4831 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R4827:4827 Top.or <> i:57 var
+R4832:4832 Top.or <> n:56 var
+R4849:4851 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4838:4844 Top.or <> nat2fin def
+R4846:4846 Top.or <> n:56 var
+R4848:4848 Top.or <> i:57 var
+R4852:4855 Top.or <> fin0 def
+R4884:4890 Top.or <> nat2fin def
+R4913:4920 Top.or <> fin_0_eq thm
+R4913:4920 Top.or <> fin_0_eq thm
+R4936:4938 Top.or <> :::x_'?<'_x not
+R4939:4939 Coq.Init.Datatypes <> S constr
+R4936:4938 Top.or <> :::x_'?<'_x not
+R4939:4939 Coq.Init.Datatypes <> S constr
+prf 4982:5005 <> fin2nat_nat2fin_overflow
+binder 5016:5016 <> n:58
+binder 5018:5018 <> i:59
+R5027:5030 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5022:5025 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R5021:5021 Top.or <> i:59 var
+R5026:5026 Top.or <> n:58 var
+R5053:5055 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5031:5037 Top.or <> fin2nat def
+R5041:5047 Top.or <> nat2fin def
+R5049:5049 Top.or <> n:58 var
+R5051:5051 Top.or <> i:59 var
+R5087:5090 Top.or <> :::x_'?<'_x not
+R5087:5090 Top.or <> :::x_'?<'_x not
+R5108:5123 Top.or <> nat2fin_overflow thm
+R5108:5123 Top.or <> nat2fin_overflow thm
+R5108:5123 Top.or <> nat2fin_overflow thm
+R5108:5123 Top.or <> nat2fin_overflow thm
+R5140:5151 Top.or <> fin2nat_fin0 thm
+R5140:5151 Top.or <> fin2nat_fin0 thm
+def 5210:5216 <> fin2fin
+binder 5219:5219 <> n:60
+binder 5221:5221 <> m:61
+R5229:5231 Top.or <> fin def
+R5233:5233 Top.or <> n:60 var
+binder 5225:5225 <> f:62
+R5238:5240 Top.or <> fin def
+R5242:5242 Top.or <> m:61 var
+R5247:5253 Top.or <> nat2fin def
+R5256:5262 Top.or <> fin2nat def
+R5264:5264 Top.or <> f:62 var
+sec 5345:5353 <> ff2f_f2ff
+binder 5367:5367 <> A:63
+R5379:5379 Top.or <> A:63 var
+binder 5371:5375 <> Azero:64
+def 5418:5421 <> ff2f
+binder 5424:5424 <> n:65
+R5438:5441 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5433:5435 Top.or <> fin def
+R5437:5437 Top.or <> n:65 var
+R5442:5442 Top.or <> ff2f_f2ff.A var
+binder 5428:5429 <> ff:66
+R5450:5453 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5447:5449 Coq.Init.Datatypes <> nat ind
+R5454:5454 Top.or <> ff2f_f2ff.A var
+binder 5463:5463 <> i:67
+R5468:5469 Top.or <> ff:66 var
+R5472:5478 Top.or <> nat2fin def
+R5480:5480 Top.or <> i:67 var
+def 5521:5524 <> f2ff
+binder 5527:5527 <> n:68
+R5538:5541 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5535:5537 Coq.Init.Datatypes <> nat ind
+R5542:5542 Top.or <> ff2f_f2ff.A var
+binder 5531:5531 <> f:69
+R5552:5555 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5547:5549 Top.or <> fin def
+R5551:5551 Top.or <> n:68 var
+R5556:5556 Top.or <> ff2f_f2ff.A var
+binder 5565:5565 <> i:70
+R5570:5570 Top.or <> f:69 var
+R5573:5579 Top.or <> fin2nat def
+R5581:5581 Top.or <> i:70 var
+prf 5666:5677 <> ff2f_f2ff_id
+binder 5689:5689 <> n:71
+R5700:5703 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5697:5699 Coq.Init.Datatypes <> nat ind
+R5704:5704 Top.or <> ff2f_f2ff.A var
+binder 5693:5693 <> f:72
+binder 5707:5707 <> i:73
+R5715:5718 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5711:5713 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5710:5710 Top.or <> i:73 var
+R5714:5714 Top.or <> n:71 var
+R5737:5739 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5720:5723 Top.or <> ff2f def
+R5725:5725 Top.or <> n:71 var
+R5728:5731 Top.or <> f2ff def
+R5733:5733 Top.or <> f:72 var
+R5736:5736 Top.or <> i:73 var
+R5740:5740 Top.or <> f:72 var
+R5742:5742 Top.or <> i:73 var
+R5769:5772 Top.or <> f2ff def
+R5774:5777 Top.or <> ff2f def
+R5788:5805 Top.or <> fin2nat_nat2fin_id thm
+R5788:5805 Top.or <> fin2nat_nat2fin_id thm
+R5788:5805 Top.or <> fin2nat_nat2fin_id thm
+R5788:5805 Top.or <> fin2nat_nat2fin_id thm
+R5826:5834 Top.or ff2f_f2ff <> sec
+R5865:5872 Top.or <> nat2finS def
+not 5850:5850 <> :::x_'.1'
+R5918:5925 Top.or <> nat2finS def
+not 5903:5903 <> :::x_'.2'
+R5971:5978 Top.or <> nat2finS def
+not 5956:5956 <> :::x_'.3'
+R6022:6023 Top.or <> :::x_'.1' not
+not 6010:6010 <> :::x_'.x'
+def 6074:6076 <> l2v
+binder 6079:6079 <> A:74
+binder 6082:6082 <> n:75
+R6091:6091 Top.or <> A:74 var
+binder 6085:6089 <> Azero:76
+R6099:6102 Coq.Init.Datatypes <> list ind
+R6104:6104 Top.or <> A:74 var
+binder 6095:6095 <> l:77
+R6109:6111 Top.or <> vec def
+R6113:6113 Top.or <> n:75 var
+binder 6122:6122 <> i:78
+R6127:6129 Coq.Lists.List <> nth def
+R6145:6149 Top.or <> Azero:76 var
+R6143:6143 Top.or <> l:77 var
+R6132:6138 Top.or <> fin2nat def
+R6140:6140 Top.or <> i:78 var
+def 6186:6188 <> v2l
+binder 6191:6191 <> A:79
+binder 6195:6195 <> n:80
+R6203:6205 Top.or <> vec def
+R6207:6207 Top.or <> n:80 var
+binder 6199:6199 <> v:81
+R6212:6215 Coq.Init.Datatypes <> list ind
+R6217:6217 Top.or <> A:79 var
+R6222:6224 Coq.Lists.List <> map def
+R6229:6234 Top.or <> finseq def
+R6236:6236 Top.or <> n:80 var
+R6226:6226 Top.or <> v:81 var
+def 6252:6254 <> f2v
+binder 6257:6258 <> tA:82
+binder 6262:6262 <> n:83
+R6273:6276 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6270:6272 Coq.Init.Datatypes <> nat ind
+R6277:6278 Top.or <> tA:82 var
+binder 6266:6266 <> f:84
+R6284:6286 Top.or <> vec def
+R6288:6289 Top.or <> tA:82 var
+R6291:6291 Top.or <> n:83 var
+binder 6300:6300 <> i:85
+R6305:6305 Top.or <> f:84 var
+R6308:6314 Top.or <> fin2nat def
+R6316:6316 Top.or <> i:85 var
+R6329:6331 Top.or <> l2v def
+R6335:6335 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R6338:6339 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R6342:6342 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R6336:6337 Coq.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R6340:6341 Coq.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+R6354:6356 Top.or <> v2l def
+R6359:6361 Top.or <> l2v def
+R6365:6365 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R6368:6369 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R6372:6372 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R6366:6367 Coq.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R6370:6371 Coq.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+def 6388:6394 <> vrepeat
+binder 6397:6398 <> tA:86
+R6413:6415 Coq.Init.Datatypes <> nat ind
+binder 6409:6409 <> n:87
+R6423:6424 Top.or <> tA:86 var
+binder 6419:6419 <> a:88
+R6430:6432 Top.or <> vec def
+R6434:6435 Top.or <> tA:86 var
+R6437:6437 Top.or <> n:87 var
+R6451:6451 Top.or <> a:88 var
+def 6466:6470 <> vzero
+binder 6473:6474 <> tA:89
+binder 6476:6476 <> n:90
+binder 6478:6482 <> Azero:91
+R6487:6489 Top.or <> vec def
+R6491:6492 Top.or <> tA:89 var
+R6494:6494 Top.or <> n:90 var
+R6499:6505 Top.or <> vrepeat def
+R6509:6513 Top.or <> Azero:91 var
+R6507:6507 Top.or <> n:90 var
+R6525:6527 Top.or <> v2l def
+R6530:6536 Top.or <> vrepeat def
+R6540:6541 Coq.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+def 6588:6591 <> vadd
+R6598:6600 Coq.Init.Datatypes <> nat ind
+binder 6594:6594 <> n:92
+R6612:6614 Top.or <> vec def
+R6616:6616 Top.or <> n:92 var
+binder 6604:6605 <> v1:93
+binder 6607:6608 <> v2:94
+R6621:6623 Top.or <> vec def
+R6625:6625 Top.or <> n:92 var
+binder 6636:6636 <> i:95
+R6641:6645 Coq.Reals.Rdefinitions RbaseSymbolsImpl Rplus defax
+R6648:6649 Top.or <> v1:93 var
+R6651:6651 Top.or <> i:95 var
+R6655:6656 Top.or <> v2:94 var
+R6658:6658 Top.or <> i:95 var
+R6675:6678 Top.or <> vadd def
+not 6668:6668 <> ::vec_scope:x_'+'_x
+def 6724:6728 <> vcmul
+R6735:6737 Coq.Init.Datatypes <> nat ind
+binder 6731:6731 <> n:96
+R6745:6745 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6741:6741 <> k:97
+R6753:6755 Top.or <> vec def
+R6757:6757 Top.or <> n:96 var
+binder 6749:6749 <> v:98
+R6762:6764 Top.or <> vec def
+R6766:6766 Top.or <> n:96 var
+binder 6777:6777 <> i:99
+R6782:6786 Coq.Reals.Rdefinitions RbaseSymbolsImpl Rmult defax
+R6788:6788 Top.or <> k:97 var
+R6791:6791 Top.or <> v:98 var
+R6793:6793 Top.or <> i:99 var
+R6820:6824 Top.or <> vcmul def
+not 6806:6806 <> :::x_'\.*'_x
+def 6897:6900 <> vsub
+R6907:6909 Coq.Init.Datatypes <> nat ind
+binder 6903:6903 <> n:100
+R6921:6923 Top.or <> vec def
+R6925:6925 Top.or <> n:100 var
+binder 6913:6914 <> v1:101
+binder 6916:6917 <> v2:102
+R6930:6932 Top.or <> vec def
+R6934:6934 Top.or <> n:100 var
+R6941:6944 Top.or <> vadd def
+R6950:6954 Top.or <> vcmul def
+R6961:6962 Top.or <> v2:102 var
+R6946:6947 Top.or <> v1:101 var
+def 7003:7006 <> vdot
+R7013:7015 Coq.Init.Datatypes <> nat ind
+binder 7009:7009 <> n:103
+R7027:7029 Top.or <> vec def
+R7031:7031 Top.or <> n:103 var
+binder 7019:7020 <> v1:104
+binder 7022:7023 <> v2:105
+R7036:7036 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R7043:7051 Coq.Lists.List <> fold_left def
+R7060:7062 Top.or <> v2l def
+binder 7069:7069 <> i:106
+R7074:7078 Coq.Reals.Rdefinitions RbaseSymbolsImpl Rmult defax
+R7081:7082 Top.or <> v1:104 var
+R7084:7084 Top.or <> i:106 var
+R7088:7089 Top.or <> v2:105 var
+R7091:7091 Top.or <> i:106 var
+R7053:7057 Coq.Reals.Rdefinitions RbaseSymbolsImpl Rplus defax
+R7126:7129 Top.or <> vdot def
+not 7110:7110 <> ::vec_scope:'<'_x_','_x_'>'
+def 7211:7214 <> vlen
+R7221:7223 Coq.Init.Datatypes <> nat ind
+binder 7217:7217 <> n:107
+R7231:7233 Top.or <> vec def
+R7235:7235 Top.or <> n:107 var
+binder 7227:7227 <> v:108
+R7240:7240 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R7247:7250 Coq.Reals.R_sqrt <> sqrt def
+R7253:7256 Top.or <> vdot def
+R7260:7260 Top.or <> v:108 var
+R7258:7258 Top.or <> v:108 var
+R7287:7290 Top.or <> vlen def
+not 7273:7273 <> ::vec_scope:'||'_x_'||'
+def 7368:7372 <> vunit
+R7379:7381 Coq.Init.Datatypes <> nat ind
+binder 7375:7375 <> n:109
+R7389:7391 Top.or <> vec def
+R7393:7393 Top.or <> n:109 var
+binder 7385:7385 <> v:110
+R7408:7408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7415:7418 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7409:7412 Top.or <> vlen def
+R7414:7414 Top.or <> v:110 var
+def 7436:7440 <> vorth
+R7447:7449 Coq.Init.Datatypes <> nat ind
+binder 7443:7443 <> n:111
+R7461:7463 Top.or <> vec def
+R7465:7465 Top.or <> n:111 var
+binder 7453:7454 <> v1:112
+binder 7456:7457 <> v2:113
+R7480:7480 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7491:7494 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7481:7484 Top.or <> vdot def
+R7489:7490 Top.or <> v2:113 var
+R7486:7487 Top.or <> v1:112 var
+R7523:7527 Top.or <> vorth def
+not 7509:7509 <> ::vec_scope:x_'_|_'_x
+def 7653:7657 <> vproj
+R7664:7666 Coq.Init.Datatypes <> nat ind
+binder 7660:7660 <> n:114
+binder 7669:7669 <> a:115
+binder 7671:7671 <> b:116
+R7675:7677 Top.or <> vec def
+R7679:7679 Top.or <> n:114 var
+R7684:7684 Top.or <> :::x_'\.*'_x not
+R7708:7713 Top.or <> :::x_'\.*'_x not
+R7685:7685 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R7694:7698 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R7707:7707 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R7686:7689 Top.or <> vdot def
+R7693:7693 Top.or <> b:116 var
+R7691:7691 Top.or <> a:115 var
+R7699:7702 Top.or <> vdot def
+R7706:7706 Top.or <> b:116 var
+R7704:7704 Top.or <> b:116 var
+R7714:7714 Top.or <> b:116 var
+def 7728:7732 <> vperp
+R7739:7741 Coq.Init.Datatypes <> nat ind
+binder 7735:7735 <> n:117
+binder 7744:7744 <> a:118
+binder 7746:7746 <> b:119
+R7750:7752 Top.or <> vec def
+R7754:7754 Top.or <> n:117 var
+R7759:7762 Top.or <> vadd def
+R7767:7771 Top.or <> vcmul def
+R7779:7783 Top.or <> vproj def
+R7787:7787 Top.or <> b:119 var
+R7785:7785 Top.or <> a:118 var
+R7764:7764 Top.or <> a:118 var
+def 7829:7834 <> vnorml
+R7841:7843 Coq.Init.Datatypes <> nat ind
+binder 7837:7837 <> n:120
+R7851:7853 Top.or <> vec def
+R7855:7855 Top.or <> n:120 var
+binder 7847:7847 <> v:121
+R7860:7862 Top.or <> vec def
+R7864:7864 Top.or <> n:120 var
+binder 7875:7875 <> i:122
+R7880:7883 Coq.Reals.Rdefinitions <> Rdiv def
+R7886:7886 Top.or <> v:121 var
+R7888:7888 Top.or <> i:122 var
+R7892:7895 Top.or <> vlen def
+R7897:7897 Top.or <> v:121 var
+def 7941:7946 <> vangle
+R7953:7955 Coq.Init.Datatypes <> nat ind
+binder 7949:7949 <> n:123
+R7967:7969 Top.or <> vec def
+R7971:7971 Top.or <> n:123 var
+binder 7959:7960 <> v1:124
+binder 7962:7963 <> v2:125
+R7976:7976 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R7983:7986 Coq.Reals.Ratan <> acos def
+R7989:7992 Coq.Reals.Rdefinitions <> Rdiv def
+R7995:7998 Top.or <> vdot def
+R8003:8004 Top.or <> v2:125 var
+R8000:8001 Top.or <> v1:124 var
+R8008:8012 Coq.Reals.Rdefinitions RbaseSymbolsImpl Rmult defax
+R8015:8018 Top.or <> vlen def
+R8020:8021 Top.or <> v1:124 var
+R8025:8028 Top.or <> vlen def
+R8030:8031 Top.or <> v2:125 var
+R8059:8064 Top.or <> vangle def
+not 8046:8046 <> ::vec_scope:x_'/_'_x
+def 8152:8158 <> v3cross
+R8167:8169 Top.or <> vec def
+binder 8161:8161 <> a:126
+binder 8163:8163 <> b:127
+R8176:8178 Top.or <> vec def
+R8188:8190 Top.or <> l2v def
+R8192:8192 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R8200:8200 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8222:8223 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8245:8246 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8268:8268 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8210:8212 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R8204:8206 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8202:8203 Top.or <> :::x_'.2' not
+R8201:8201 Top.or <> a:126 var
+R8208:8209 Top.or <> :::x_'.3' not
+R8207:8207 Top.or <> b:127 var
+R8216:8218 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8214:8215 Top.or <> :::x_'.3' not
+R8213:8213 Top.or <> a:126 var
+R8220:8221 Top.or <> :::x_'.2' not
+R8219:8219 Top.or <> b:127 var
+R8233:8235 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R8227:8229 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8225:8226 Top.or <> :::x_'.3' not
+R8224:8224 Top.or <> a:126 var
+R8231:8232 Top.or <> :::x_'.1' not
+R8230:8230 Top.or <> b:127 var
+R8239:8241 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8237:8238 Top.or <> :::x_'.1' not
+R8236:8236 Top.or <> a:126 var
+R8243:8244 Top.or <> :::x_'.3' not
+R8242:8242 Top.or <> b:127 var
+R8256:8258 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R8250:8252 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8248:8249 Top.or <> :::x_'.1' not
+R8247:8247 Top.or <> a:126 var
+R8254:8255 Top.or <> :::x_'.2' not
+R8253:8253 Top.or <> b:127 var
+R8262:8264 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8260:8261 Top.or <> :::x_'.2' not
+R8259:8259 Top.or <> a:126 var
+R8266:8267 Top.or <> :::x_'.1' not
+R8265:8265 Top.or <> b:127 var
+R8293:8299 Top.or <> v3cross def
+not 8280:8280 <> ::vec_scope:x_'\x'_x
+def 8374:8378 <> lprod
+R8385:8388 Coq.Init.Datatypes <> list ind
+R8390:8390 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8381:8381 <> l:128
+R8398:8398 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8394:8394 <> r:129
+R8403:8403 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R8416:8416 Top.or <> l:128 var
+R8427:8428 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R8433:8433 Top.or <> r:129 var
+R8441:8444 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8451:8454 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8464:8464 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8455:8459 Top.or <> lprod:130 def
+def 8513:8517 <> vprod
+binder 8520:8520 <> n:132
+R8529:8531 Top.or <> vec def
+R8533:8533 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R8535:8535 Top.or <> n:132 var
+binder 8524:8524 <> a:133
+R8541:8545 Top.or <> lprod def
+R8548:8550 Top.or <> v2l def
+R8552:8552 Top.or <> a:133 var
+R8581:8585 Top.or <> vprod def
+not 8567:8567 <> ::vec_scope:'\prod'_x
+def 8653:8657 <> vnorm
+binder 8660:8660 <> n:134
+R8668:8670 Top.or <> vec def
+R8672:8672 Top.or <> n:134 var
+binder 8664:8664 <> a:135
+R8677:8679 Top.or <> vec def
+R8681:8681 Top.or <> n:134 var
+R8686:8690 Top.or <> vcmul def
+R8707:8707 Top.or <> a:135 var
+R8694:8697 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R8704:8704 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R8698:8701 Top.or <> vlen def
+R8703:8703 Top.or <> a:135 var
+def 8722:8726 <> vtest
+R8730:8732 Top.or <> vec def
+R8741:8743 Top.or <> l2v def
+R8745:8745 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R8751:8751 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8754:8755 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8758:8758 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8752:8753 Coq.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+R8756:8757 Coq.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+R8770:8772 Top.or <> v2l def
+R8776:8781 Top.or <> vnorml def
+R8785:8789 Top.or <> vtest def
+R8801:8803 Top.or <> v2l def
+R8807:8811 Top.or <> vnorm def
+R8815:8819 Top.or <> vtest def
+def 8835:8840 <> vzeroN
+R8847:8849 Coq.Init.Datatypes <> nat ind
+binder 8843:8843 <> n:136
+R8854:8856 Top.or <> vec def
+R8858:8858 Top.or <> n:136 var
+R8864:8866 Top.or <> l2v def
+R8868:8868 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R8870:8870 Top.or <> n:136 var
+R8875:8880 Coq.Lists.List <> repeat def
+R8884:8884 Top.or <> n:136 var
+R8897:8902 Top.or <> vzeroN def
+prf 8961:8967 <> vnth_eq
+binder 8979:8980 <> tA:137
+binder 8982:8982 <> n:138
+R8991:8993 Top.or <> vec def
+R8995:8996 Top.or <> tA:137 var
+R8998:8998 Top.or <> n:138 var
+binder 8986:8986 <> a:139
+binder 9001:9001 <> i:140
+binder 9003:9003 <> j:141
+R9011:9012 Coq.Init.Peano <> lt def
+R9014:9014 Top.or <> i:140 var
+R9016:9016 Top.or <> n:138 var
+binder 9006:9007 <> Hi:142
+R9025:9026 Coq.Init.Peano <> lt def
+R9028:9028 Top.or <> j:141 var
+R9030:9030 Top.or <> n:138 var
+binder 9020:9021 <> Hj:143
+R9043:9046 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9039:9041 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9038:9038 Top.or <> i:140 var
+R9042:9042 Top.or <> j:141 var
+R9060:9062 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9048:9049 Top.or <> :::x_'.['_x_']' not
+R9059:9059 Top.or <> :::x_'.['_x_']' not
+R9050:9056 Top.or <> nat2fin def
+R9058:9058 Top.or <> i:140 var
+R9047:9047 Top.or <> a:139 var
+R9064:9065 Top.or <> :::x_'.['_x_']' not
+R9075:9075 Top.or <> :::x_'.['_x_']' not
+R9066:9072 Top.or <> nat2fin def
+R9074:9074 Top.or <> j:141 var
+R9063:9063 Top.or <> a:139 var
+def 9167:9169 <> mat
+binder 9171:9171 <> A:144
+binder 9173:9173 <> r:145
+binder 9175:9175 <> c:146
+R9182:9184 Top.or <> vec def
+R9188:9190 Top.or <> vec def
+R9192:9192 Top.or <> A:144 var
+R9194:9194 Top.or <> c:146 var
+R9197:9197 Top.or <> r:145 var
+abbrev 9210:9213 <> smat
+R9222:9224 Top.or <> mat def
+def 9246:9249 <> fequ
+binder 9252:9252 <> n:147
+R9262:9264 Top.or <> fin def
+R9266:9266 Top.or <> n:147 var
+binder 9256:9256 <> i:148
+binder 9258:9258 <> j:149
+R9271:9274 Coq.Init.Datatypes <> bool ind
+R9288:9291 Coq.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R9279:9285 Top.or <> fin2nat def
+R9287:9287 Top.or <> i:148 var
+R9292:9298 Top.or <> fin2nat def
+R9300:9300 Top.or <> j:149 var
+def 9315:9318 <> mat1
+binder 9321:9321 <> n:150
+R9326:9329 Top.or <> smat abbrev
+R9331:9331 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R9333:9333 Top.or <> n:150 var
+R9333:9333 Top.or <> n:150 var
+binder 9342:9342 <> i:151
+binder 9344:9344 <> j:152
+R9353:9356 Top.or <> fequ def
+R9360:9360 Top.or <> j:152 var
+R9358:9358 Top.or <> i:151 var
+abbrev 9388:9391 <> cvec
+R9401:9403 Top.or <> mat def
+abbrev 9436:9439 <> rvec
+R9449:9451 Top.or <> mat def
+def 9637:9639 <> l2m
+binder 9642:9643 <> tA:153
+binder 9645:9645 <> r:154
+binder 9647:9647 <> c:155
+R9659:9661 Top.or <> vec def
+R9663:9663 Top.or <> c:155 var
+binder 9651:9655 <> vzero:156
+R9675:9676 Top.or <> tA:153 var
+binder 9667:9671 <> Azero:157
+R9684:9687 Coq.Init.Datatypes <> list ind
+R9690:9693 Coq.Init.Datatypes <> list ind
+R9695:9696 Top.or <> tA:153 var
+binder 9680:9680 <> d:158
+R9702:9704 Top.or <> mat def
+R9706:9707 Top.or <> tA:153 var
+R9709:9709 Top.or <> r:154 var
+R9711:9711 Top.or <> c:155 var
+R9719:9721 Top.or <> l2v def
+R9724:9726 Top.or <> vec def
+R9728:9728 Top.or <> c:155 var
+R9731:9731 Top.or <> r:154 var
+R9733:9737 Top.or <> vzero:156 var
+R9740:9742 Coq.Lists.List <> map def
+R9762:9762 Top.or <> d:158 var
+R9746:9748 Top.or <> l2v def
+R9750:9751 Top.or <> tA:153 var
+R9753:9753 Top.or <> c:155 var
+R9755:9759 Top.or <> Azero:157 var
+def 9800:9802 <> m2l
+binder 9805:9805 <> A:159
+binder 9807:9807 <> r:160
+binder 9809:9809 <> c:161
+R9817:9819 Top.or <> mat def
+R9821:9821 Top.or <> A:159 var
+R9823:9823 Top.or <> r:160 var
+R9825:9825 Top.or <> c:161 var
+binder 9813:9813 <> m:162
+R9830:9833 Coq.Init.Datatypes <> list ind
+R9836:9839 Coq.Init.Datatypes <> list ind
+R9841:9841 Top.or <> A:159 var
+R9847:9849 Coq.Lists.List <> map def
+R9856:9858 Top.or <> v2l def
+R9860:9860 Top.or <> m:162 var
+R9851:9853 Top.or <> v2l def
+R9874:9876 Top.or <> l2m def
+R9878:9878 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R9885:9890 Top.or <> vzeroN def
+R9897:9897 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9903:9904 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9910:9911 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9917:9918 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9924:9924 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9898:9898 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9900:9900 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9902:9902 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9905:9905 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9907:9907 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9909:9909 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9912:9912 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9914:9914 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9916:9916 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9919:9919 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9921:9921 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9923:9923 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9936:9938 Top.or <> m2l def
+R9940:9940 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R9948:9950 Top.or <> l2m def
+R9952:9952 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R9959:9964 Top.or <> vzeroN def
+R9971:9971 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9977:9978 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9984:9985 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9991:9992 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9998:9998 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9972:9972 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9974:9974 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9976:9976 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9979:9979 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9981:9981 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9983:9983 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9986:9986 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9988:9988 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9990:9990 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9993:9993 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9995:9995 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9997:9997 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+def 10033:10038 <> mtrans
+binder 10041:10042 <> tA:163
+binder 10044:10044 <> r:164
+binder 10046:10046 <> c:165
+R10054:10056 Top.or <> mat def
+R10058:10059 Top.or <> tA:163 var
+R10061:10061 Top.or <> r:164 var
+R10063:10063 Top.or <> c:165 var
+binder 10050:10050 <> M:166
+R10068:10070 Top.or <> mat def
+R10072:10073 Top.or <> tA:163 var
+R10075:10075 Top.or <> c:165 var
+R10077:10077 Top.or <> r:164 var
+binder 10086:10086 <> i:167
+binder 10088:10088 <> j:168
+R10093:10093 Top.or <> M:166 var
+R10095:10095 Top.or <> j:168 var
+R10097:10097 Top.or <> i:167 var
+R10120:10125 Top.or <> mtrans def
+not 10109:10109 <> :::x_'\T'
+def 10196:10199 <> madd
+binder 10202:10202 <> r:169
+binder 10204:10204 <> c:170
+R10216:10218 Top.or <> mat def
+R10220:10220 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10222:10222 Top.or <> r:169 var
+R10224:10224 Top.or <> c:170 var
+binder 10208:10209 <> M1:171
+binder 10211:10212 <> M2:172
+R10229:10231 Top.or <> mat def
+R10233:10233 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10235:10235 Top.or <> r:169 var
+R10237:10237 Top.or <> c:170 var
+binder 10248:10248 <> i:173
+binder 10250:10250 <> j:174
+R10255:10255 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R10262:10266 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R10273:10273 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R10256:10257 Top.or <> M1:171 var
+R10259:10259 Top.or <> i:173 var
+R10261:10261 Top.or <> j:174 var
+R10267:10268 Top.or <> M2:172 var
+R10270:10270 Top.or <> i:173 var
+R10272:10272 Top.or <> j:174 var
+def 10287:10291 <> mtest
+R10297:10299 Top.or <> l2m def
+R10301:10301 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10308:10313 Top.or <> vzeroN def
+R10320:10320 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10326:10327 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10333:10333 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10321:10321 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10323:10323 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10325:10325 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10328:10328 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10330:10330 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10332:10332 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10345:10347 Top.or <> m2l def
+R10349:10349 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10356:10359 Top.or <> madd def
+R10367:10371 Top.or <> mtest def
+R10361:10365 Top.or <> mtest def
+def 10412:10416 <> mcmul
+binder 10419:10419 <> r:175
+binder 10421:10421 <> c:176
+R10429:10429 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10425:10425 <> k:177
+R10437:10439 Top.or <> mat def
+R10441:10441 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10443:10443 Top.or <> r:175 var
+R10445:10445 Top.or <> c:176 var
+binder 10433:10433 <> M:178
+R10450:10452 Top.or <> mat def
+R10454:10454 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10456:10456 Top.or <> r:175 var
+R10458:10458 Top.or <> c:176 var
+binder 10469:10469 <> i:179
+binder 10471:10471 <> j:180
+R10477:10480 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R10486:10486 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R10476:10476 Top.or <> k:177 var
+R10481:10481 Top.or <> M:178 var
+R10483:10483 Top.or <> i:179 var
+R10485:10485 Top.or <> j:180 var
+def 10520:10523 <> mmul
+binder 10526:10526 <> r:181
+binder 10528:10528 <> c:182
+binder 10530:10530 <> s:183
+R10539:10541 Top.or <> mat def
+R10543:10543 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10545:10545 Top.or <> r:181 var
+R10547:10547 Top.or <> c:182 var
+binder 10534:10535 <> M1:184
+R10556:10558 Top.or <> mat def
+R10560:10560 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10562:10562 Top.or <> c:182 var
+R10564:10564 Top.or <> s:183 var
+binder 10551:10552 <> M2:185
+R10569:10571 Top.or <> mat def
+R10573:10573 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10575:10575 Top.or <> r:181 var
+R10577:10577 Top.or <> s:183 var
+binder 10588:10588 <> i:186
+binder 10590:10590 <> j:187
+R10595:10598 Top.or <> vdot def
+binder 10612:10612 <> k:188
+R10617:10618 Top.or <> M2:185 var
+R10620:10620 Top.or <> k:188 var
+R10622:10622 Top.or <> j:187 var
+R10601:10602 Top.or <> M1:184 var
+R10604:10604 Top.or <> i:186 var
+def 10666:10670 <> mmulv
+binder 10673:10673 <> r:189
+binder 10675:10675 <> c:190
+R10683:10685 Top.or <> mat def
+R10687:10687 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10689:10689 Top.or <> r:189 var
+R10691:10691 Top.or <> c:190 var
+binder 10679:10679 <> M:191
+R10699:10701 Top.or <> vec def
+R10703:10703 Top.or <> c:190 var
+binder 10695:10695 <> v:192
+R10708:10710 Top.or <> vec def
+R10712:10712 Top.or <> r:189 var
+binder 10723:10723 <> i:193
+R10728:10731 Top.or <> vdot def
+R10739:10739 Top.or <> v:192 var
+R10734:10734 Top.or <> M:191 var
+R10736:10736 Top.or <> i:193 var
+R10765:10769 Top.or <> mmulv def
+not 10752:10752 <> :::x_'*v'_x
+def 11015:11018 <> pick
+binder 11021:11022 <> tA:194
+R11041:11042 Top.or <> tA:194 var
+binder 11033:11037 <> Azero:195
+R11050:11053 Coq.Init.Datatypes <> list ind
+R11055:11056 Top.or <> tA:194 var
+binder 11046:11046 <> l:196
+R11064:11066 Coq.Init.Datatypes <> nat ind
+binder 11060:11060 <> k:197
+R11073:11075 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11071:11072 Top.or <> tA:194 var
+R11076:11079 Coq.Init.Datatypes <> list ind
+R11081:11082 Top.or <> tA:194 var
+R11095:11095 Top.or <> k:197 var
+R11111:11111 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11122:11123 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11128:11128 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11112:11113 Coq.Lists.List <> hd def
+R11121:11121 Top.or <> l:196 var
+R11115:11119 Top.or <> Azero:195 var
+R11124:11125 Coq.Lists.List <> tl def
+R11127:11127 Top.or <> l:196 var
+R11134:11134 Coq.Init.Datatypes <> S constr
+R11154:11154 Top.or <> l:196 var
+R11169:11170 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11175:11175 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11181:11182 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11185:11185 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11176:11180 Top.or <> Azero:195 var
+R11183:11184 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11196:11199 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R11230:11233 Top.or <> pick:198 def
+R11235:11239 Top.or <> Azero:195 var
+binder 11221:11221 <> a:201
+binder 11223:11224 <> l0:202
+R11260:11260 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11262:11263 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11280:11280 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11261:11261 Top.or <> a:201 var
+R11268:11271 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R11265:11265 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11267:11267 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R11272:11273 Top.or <> l0:202 var
+def 13123:13129 <> permAux
+binder 13132:13133 <> tA:203
+R13152:13153 Top.or <> tA:203 var
+binder 13144:13148 <> Azero:204
+R13161:13163 Coq.Init.Datatypes <> nat ind
+binder 13157:13157 <> n:205
+R13171:13174 Coq.Init.Datatypes <> list ind
+R13176:13177 Top.or <> tA:203 var
+binder 13167:13167 <> l:206
+R13182:13185 Coq.Init.Datatypes <> list ind
+R13188:13191 Coq.Init.Datatypes <> list ind
+R13193:13194 Top.or <> tA:203 var
+R13208:13208 Top.or <> n:205 var
+R13224:13224 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13227:13227 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13225:13226 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R13233:13233 Coq.Init.Datatypes <> S constr
+R13247:13252 Coq.Lists.List <> concat def
+R13263:13265 Coq.Lists.List <> map def
+R13385:13387 Coq.Lists.List <> map def
+R13416:13418 Coq.Lists.List <> seq def
+R13422:13422 Top.or <> n:205 var
+binder 13394:13394 <> i:209
+R13399:13402 Top.or <> pick def
+R13412:13412 Top.or <> i:209 var
+R13410:13410 Top.or <> l:206 var
+R13404:13408 Top.or <> Azero:204 var
+binder 13283:13283 <> k:210
+R13318:13318 Top.or <> k:210 var
+R13307:13307 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13309:13310 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13313:13313 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13337:13339 Coq.Lists.List <> map def
+R13351:13357 Top.or <> permAux:207 def
+R13359:13363 Top.or <> Azero:204 var
+R13342:13345 Coq.Init.Datatypes <> cons constr
+def 13479:13482 <> perm
+binder 13485:13486 <> tA:212
+R13505:13506 Top.or <> tA:212 var
+binder 13497:13501 <> Azero:213
+R13514:13517 Coq.Init.Datatypes <> list ind
+R13519:13520 Top.or <> tA:212 var
+binder 13510:13510 <> l:214
+R13525:13528 Coq.Init.Datatypes <> list ind
+R13531:13534 Coq.Init.Datatypes <> list ind
+R13536:13537 Top.or <> tA:212 var
+R13543:13549 Top.or <> permAux def
+R13568:13568 Top.or <> l:214 var
+R13558:13563 Coq.Init.Datatypes <> length def
+R13565:13565 Top.or <> l:214 var
+R13551:13555 Top.or <> Azero:213 var
+R13580:13583 Top.or <> perm def
+R13591:13591 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13597:13597 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13603:13603 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13609:13609 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+def 13734:13743 <> seqprodAux
+R13750:13752 Coq.Init.Datatypes <> nat ind
+binder 13746:13746 <> n:215
+R13763:13766 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13760:13762 Coq.Init.Datatypes <> nat ind
+R13767:13767 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 13756:13756 <> f:216
+R13777:13777 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 13771:13773 <> acc:217
+R13782:13782 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R13795:13795 Top.or <> n:215 var
+R13806:13806 Coq.Init.Datatypes <> O constr
+R13811:13813 Top.or <> acc:217 var
+R13819:13819 Coq.Init.Datatypes <> S constr
+R13827:13836 Top.or <> seqprodAux:218 def
+R13848:13850 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R13844:13844 Top.or <> f:216 var
+R13851:13853 Top.or <> acc:217 var
+R13841:13841 Top.or <> f:216 var
+def 13874:13880 <> seqprod
+R13887:13889 Coq.Init.Datatypes <> nat ind
+binder 13883:13883 <> n:220
+R13900:13903 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13897:13899 Coq.Init.Datatypes <> nat ind
+R13904:13904 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 13893:13893 <> f:221
+R13909:13909 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R13914:13923 Top.or <> seqprodAux def
+R13925:13925 Top.or <> n:220 var
+R13927:13927 Top.or <> f:221 var
+def 13944:13946 <> f2m
+binder 13949:13950 <> tA:222
+binder 13961:13961 <> r:223
+binder 13963:13963 <> c:224
+R13974:13977 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13971:13973 Coq.Init.Datatypes <> nat ind
+R13981:13984 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13978:13980 Coq.Init.Datatypes <> nat ind
+R13985:13986 Top.or <> tA:222 var
+binder 13967:13967 <> f:225
+R13991:13993 Top.or <> mat def
+R13995:13996 Top.or <> tA:222 var
+R13998:13998 Top.or <> r:223 var
+R14000:14000 Top.or <> c:224 var
+R14008:14010 Top.or <> f2v def
+R14014:14014 Top.or <> r:223 var
+binder 14021:14021 <> i:226
+R14027:14029 Top.or <> f2v def
+R14031:14032 Top.or <> tA:222 var
+R14034:14034 Top.or <> c:224 var
+R14037:14037 Top.or <> f:225 var
+R14039:14039 Top.or <> i:226 var
+def 14273:14278 <> ronum1
+R14285:14287 Coq.Init.Datatypes <> nat ind
+binder 14281:14281 <> a:227
+R14295:14298 Coq.Init.Datatypes <> list ind
+R14300:14302 Coq.Init.Datatypes <> nat ind
+binder 14291:14291 <> l:228
+R14307:14309 Coq.Init.Datatypes <> nat ind
+R14316:14324 Coq.Lists.List <> fold_left def
+R14391:14391 Top.or <> l:228 var
+R14336:14338 Coq.Init.Datatypes <> nat ind
+binder 14332:14332 <> n:229
+R14346:14348 Coq.Init.Datatypes <> nat ind
+binder 14342:14342 <> b:230
+R14354:14360 Coq.Arith.PeanoNat Nat add def
+R14362:14362 Top.or <> n:229 var
+R14369:14372 Top.or <> :::x_'?<'_x not
+R14368:14368 Top.or <> b:230 var
+R14373:14373 Top.or <> a:227 var
+R14409:14414 Top.or <> ronum1 def
+R14418:14418 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14424:14424 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14430:14430 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14436:14436 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14442:14442 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+def 14996:15000 <> ronum
+R15007:15010 Coq.Init.Datatypes <> list ind
+R15012:15014 Coq.Init.Datatypes <> nat ind
+binder 15003:15003 <> l:231
+R15019:15021 Coq.Init.Datatypes <> nat ind
+R15034:15034 Top.or <> l:231 var
+R15045:15046 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R15058:15061 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R15079:15081 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R15068:15073 Top.or <> ronum1 def
+R15082:15086 Top.or <> ronum:232 def
+R15107:15110 Top.or <> perm def
+R15115:15117 Coq.Lists.List <> seq def
+R15119:15119 Coq.Init.Datatypes <> O constr
+R15112:15112 Coq.Init.Datatypes <> O constr
+def 15156:15159 <> mdet
+binder 15162:15162 <> n:234
+R15175:15178 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15167:15170 Top.or <> smat abbrev
+R15172:15172 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R15174:15174 Top.or <> n:234 var
+R15174:15174 Top.or <> n:234 var
+R15179:15179 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R15192:15192 Top.or <> n:234 var
+R15203:15203 Coq.Init.Datatypes <> O constr
+R15275:15275 Coq.Init.Datatypes <> S constr
+R15298:15301 Top.or <> smat abbrev
+R15303:15303 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R15306:15306 Coq.Init.Datatypes <> S constr
+R15306:15306 Coq.Init.Datatypes <> S constr
+binder 15294:15294 <> M:236
+R15385:15388 Top.or <> perm def
+R15393:15395 Coq.Lists.List <> seq def
+R15399:15399 Top.or <> n:234 var
+R15397:15397 Coq.Init.Datatypes <> O constr
+R15390:15390 Coq.Init.Datatypes <> O constr
+binder 15375:15380 <> colIds:237
+R15449:15452 Coq.Init.Datatypes <> list ind
+R15454:15456 Coq.Init.Datatypes <> nat ind
+binder 15447:15447 <> l:238
+R15486:15492 Top.or <> seqprod def
+R15494:15494 Top.or <> n:234 var
+binder 15501:15501 <> i:239
+R15512:15513 Top.or <> :::x_'.['_x_']' not
+R15526:15526 Top.or <> :::x_'.['_x_']' not
+R15514:15515 Top.or <> :::'#'_x not
+R15525:15525 Top.or <> :::'#'_x not
+R15516:15518 Coq.Lists.List <> nth def
+R15524:15524 Coq.Init.Datatypes <> O constr
+R15522:15522 Top.or <> l:238 var
+R15520:15520 Top.or <> i:239 var
+R15507:15508 Top.or <> :::x_'.['_x_']' not
+R15511:15511 Top.or <> :::x_'.['_x_']' not
+R15509:15509 Top.or <> :::'#'_x not
+R15510:15510 Top.or <> i:239 var
+R15506:15506 Top.or <> M:236 var
+binder 15481:15481 <> x:240
+R15621:15623 Coq.Init.Nat <> odd def
+R15626:15630 Top.or <> ronum def
+R15632:15632 Top.or <> l:238 var
+R15649:15649 Top.or <> x:240 var
+R15640:15641 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R15642:15642 Top.or <> x:240 var
+R15449:15452 Coq.Init.Datatypes <> list ind
+R15454:15456 Coq.Init.Datatypes <> nat ind
+binder 15447:15447 <> l:241
+R15461:15461 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 15441:15444 <> item:242
+R15684:15692 Coq.Lists.List <> fold_left def
+R15701:15703 Coq.Lists.List <> map def
+R15710:15715 Top.or <> colIds:237 var
+R15705:15708 Top.or <> item:242 var
+R15694:15698 Coq.Reals.Rdefinitions RbaseSymbolsImpl Rplus defax
+R15779:15782 Top.or <> mdet def
+R15787:15789 Top.or <> l2m def
+R15791:15791 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15797:15798 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15804:15804 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15792:15792 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15794:15794 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15796:15796 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15799:15799 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15801:15801 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15803:15803 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+def 15820:15829 <> msubmatNat
+R15839:15842 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15836:15838 Coq.Init.Datatypes <> nat ind
+R15846:15849 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15843:15845 Coq.Init.Datatypes <> nat ind
+R15850:15850 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 15832:15832 <> M:243
+R15860:15862 Coq.Init.Datatypes <> nat ind
+binder 15854:15854 <> i:244
+binder 15856:15856 <> j:245
+R15870:15873 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15867:15869 Coq.Init.Datatypes <> nat ind
+R15877:15880 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15874:15876 Coq.Init.Datatypes <> nat ind
+R15881:15881 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 15892:15893 <> i0:246
+binder 15895:15896 <> j0:247
+R15905:15905 Top.or <> M:243 var
+R15944:15947 Top.or <> :::x_'?<'_x not
+R15942:15943 Top.or <> j0:247 var
+R15948:15948 Top.or <> j:245 var
+R15963:15963 Coq.Init.Datatypes <> S constr
+R15965:15966 Top.or <> j0:247 var
+R15955:15956 Top.or <> j0:247 var
+R15913:15916 Top.or <> :::x_'?<'_x not
+R15911:15912 Top.or <> i0:246 var
+R15917:15917 Top.or <> i:244 var
+R15932:15932 Coq.Init.Datatypes <> S constr
+R15934:15935 Top.or <> i0:246 var
+R15924:15925 Top.or <> i0:246 var
+def 16025:16031 <> msubmat
+binder 16034:16034 <> n:248
+R16042:16045 Top.or <> smat abbrev
+R16047:16047 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R16050:16050 Coq.Init.Datatypes <> S constr
+R16052:16052 Top.or <> n:248 var
+R16050:16050 Coq.Init.Datatypes <> S constr
+R16052:16052 Top.or <> n:248 var
+binder 16038:16038 <> M:249
+R16063:16066 Top.or <> :::'''I_'_x not
+R16070:16070 Top.or <> :::'''I_'_x not
+R16067:16067 Coq.Init.Datatypes <> S constr
+R16069:16069 Top.or <> n:248 var
+binder 16057:16057 <> i:250
+binder 16059:16059 <> j:251
+R16075:16078 Top.or <> smat abbrev
+R16080:16080 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R16082:16082 Top.or <> n:248 var
+R16082:16082 Top.or <> n:248 var
+binder 16093:16094 <> i0:252
+binder 16096:16097 <> j0:253
+R16119:16119 Top.or <> :::x_'?<'_x not
+R16130:16135 Top.or <> :::x_'?<'_x not
+R16145:16145 Top.or <> :::x_'?<'_x not
+R16120:16126 Top.or <> fin2nat def
+R16128:16129 Top.or <> i0:252 var
+R16136:16142 Top.or <> fin2nat def
+R16144:16144 Top.or <> i:250 var
+R16171:16172 Top.or <> :::'#'_x not
+R16187:16187 Top.or <> :::'#'_x not
+R16173:16173 Coq.Init.Datatypes <> S constr
+R16176:16182 Top.or <> fin2nat def
+R16184:16185 Top.or <> i0:252 var
+R16152:16153 Top.or <> :::'#'_x not
+R16164:16164 Top.or <> :::'#'_x not
+R16154:16160 Top.or <> fin2nat def
+R16162:16163 Top.or <> i0:252 var
+binder 16110:16111 <> i1:254
+R16209:16209 Top.or <> :::x_'?<'_x not
+R16220:16225 Top.or <> :::x_'?<'_x not
+R16235:16235 Top.or <> :::x_'?<'_x not
+R16210:16216 Top.or <> fin2nat def
+R16218:16219 Top.or <> j0:253 var
+R16226:16232 Top.or <> fin2nat def
+R16234:16234 Top.or <> j:251 var
+R16261:16262 Top.or <> :::'#'_x not
+R16277:16277 Top.or <> :::'#'_x not
+R16263:16263 Coq.Init.Datatypes <> S constr
+R16266:16272 Top.or <> fin2nat def
+R16274:16275 Top.or <> j0:253 var
+R16242:16243 Top.or <> :::'#'_x not
+R16254:16254 Top.or <> :::'#'_x not
+R16244:16250 Top.or <> fin2nat def
+R16252:16253 Top.or <> j0:253 var
+binder 16200:16201 <> j1:255
+R16292:16293 Top.or <> :::x_'.['_x_']' not
+R16296:16296 Top.or <> :::x_'.['_x_']' not
+R16294:16295 Top.or <> j1:255 var
+R16287:16288 Top.or <> :::x_'.['_x_']' not
+R16291:16291 Top.or <> :::x_'.['_x_']' not
+R16289:16290 Top.or <> i1:254 var
+R16286:16286 Top.or <> M:249 var
+def 16333:16338 <> mminor
+binder 16341:16341 <> n:256
+R16349:16352 Top.or <> smat abbrev
+R16354:16354 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R16357:16357 Coq.Init.Datatypes <> S constr
+R16359:16359 Top.or <> n:256 var
+R16357:16357 Coq.Init.Datatypes <> S constr
+R16359:16359 Top.or <> n:256 var
+binder 16345:16345 <> M:257
+R16370:16373 Top.or <> :::'''I_'_x not
+R16377:16377 Top.or <> :::'''I_'_x not
+R16374:16374 Coq.Init.Datatypes <> S constr
+R16376:16376 Top.or <> n:256 var
+binder 16364:16364 <> i:258
+binder 16366:16366 <> j:259
+R16382:16382 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R16387:16390 Top.or <> mdet def
+R16393:16399 Top.or <> msubmat def
+R16405:16405 Top.or <> j:259 var
+R16403:16403 Top.or <> i:258 var
+R16401:16401 Top.or <> M:257 var
+def 16458:16466 <> mcofactor
+binder 16469:16469 <> n:260
+R16477:16480 Top.or <> smat abbrev
+R16482:16482 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R16485:16485 Coq.Init.Datatypes <> S constr
+R16487:16487 Top.or <> n:260 var
+R16485:16485 Coq.Init.Datatypes <> S constr
+R16487:16487 Top.or <> n:260 var
+binder 16473:16473 <> M:261
+R16498:16501 Top.or <> :::'''I_'_x not
+R16505:16505 Top.or <> :::'''I_'_x not
+R16502:16502 Coq.Init.Datatypes <> S constr
+R16504:16504 Top.or <> n:260 var
+binder 16492:16492 <> i:262
+binder 16494:16494 <> j:263
+R16510:16510 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R16526:16531 Top.or <> mminor def
+R16537:16537 Top.or <> j:263 var
+R16535:16535 Top.or <> i:262 var
+R16533:16533 Top.or <> M:261 var
+binder 16521:16521 <> x:264
+R16547:16554 Coq.Arith.PeanoNat Nat even def
+R16566:16568 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R16557:16563 Top.or <> fin2nat def
+R16565:16565 Top.or <> i:262 var
+R16569:16575 Top.or <> fin2nat def
+R16577:16577 Top.or <> j:263 var
+R16592:16593 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R16594:16594 Top.or <> x:264 var
+R16585:16585 Top.or <> x:264 var
+def 16658:16661 <> madj
+binder 16664:16664 <> n:265
+R16677:16680 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16669:16672 Top.or <> smat abbrev
+R16674:16674 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R16676:16676 Top.or <> n:265 var
+R16676:16676 Top.or <> n:265 var
+R16681:16684 Top.or <> smat abbrev
+R16686:16686 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R16688:16688 Top.or <> n:265 var
+R16688:16688 Top.or <> n:265 var
+R16702:16702 Top.or <> n:265 var
+R16713:16713 Coq.Init.Datatypes <> O constr
+binder 16722:16722 <> M:267
+R16727:16727 Top.or <> M:267 var
+R16734:16734 Coq.Init.Datatypes <> S constr
+binder 16746:16746 <> M:268
+binder 16748:16748 <> i:269
+binder 16750:16750 <> j:270
+R16755:16763 Top.or <> mcofactor def
+R16769:16769 Top.or <> i:269 var
+R16767:16767 Top.or <> j:270 var
+R16765:16765 Top.or <> M:268 var
+R16811:16814 Top.or <> madj def
+not 16800:16800 <> ::mat_scope:x_'\A'
+R16855:16857 Top.or <> m2l def
+R16859:16859 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R16867:16870 Top.or <> madj def
+R16875:16877 Top.or <> l2m def
+R16879:16879 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R16885:16886 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R16892:16892 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R16880:16880 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R16882:16882 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R16884:16884 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R16887:16887 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R16889:16889 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R16891:16891 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+def 16909:16914 <> minvAM
+binder 16917:16917 <> n:271
+R16925:16928 Top.or <> smat abbrev
+R16930:16930 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R16932:16932 Top.or <> n:271 var
+R16932:16932 Top.or <> n:271 var
+binder 16921:16921 <> M:272
+R16938:16942 Top.or <> mcmul def
+R16963:16966 Top.or <> madj def
+R16968:16968 Top.or <> M:272 var
+R16945:16948 Coq.Reals.Rdefinitions <> Rdiv def
+R16953:16956 Top.or <> mdet def
+R16958:16958 Top.or <> M:272 var
+R17000:17002 Top.or <> m2l def
+R17004:17004 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R17012:17015 Top.or <> mmul def
+R17024:17026 Top.or <> l2m def
+R17028:17028 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17034:17035 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17041:17041 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17029:17029 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17031:17031 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17033:17033 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17036:17036 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17038:17038 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17040:17040 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17046:17051 Top.or <> minvAM def
+R17056:17058 Top.or <> l2m def
+R17060:17060 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17066:17067 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17073:17073 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17061:17061 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17063:17063 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17065:17065 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17068:17068 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17070:17070 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17072:17072 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+def 17108:17111 <> quat
+R17117:17119 Top.or <> vec def
+R17121:17121 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R17152:17159 Top.or <> nat2finS def
+not 17137:17137 <> :::x_'.W'
+R17205:17212 Top.or <> nat2finS def
+not 17190:17190 <> :::x_'.X'
+R17258:17265 Top.or <> nat2finS def
+not 17243:17243 <> :::x_'.Y'
+R17311:17318 Top.or <> nat2finS def
+not 17296:17296 <> :::x_'.Z'
+def 17372:17375 <> q2im
+R17382:17385 Top.or <> quat def
+binder 17378:17378 <> q:273
+R17390:17392 Top.or <> vec def
+R17400:17402 Top.or <> l2v def
+R17404:17404 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R17412:17412 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17416:17417 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17421:17422 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17426:17426 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17414:17415 Top.or <> :::x_'.X' not
+R17413:17413 Top.or <> q:273 var
+R17419:17420 Top.or <> :::x_'.Y' not
+R17418:17418 Top.or <> q:273 var
+R17424:17425 Top.or <> :::x_'.Z' not
+R17423:17423 Top.or <> q:273 var
+def 17480:17483 <> im2q
+R17490:17492 Top.or <> vec def
+binder 17486:17486 <> q:274
+R17499:17502 Top.or <> quat def
+R17508:17510 Top.or <> l2v def
+R17512:17512 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R17520:17520 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17522:17523 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17527:17528 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17532:17533 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17537:17537 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17525:17526 Top.or <> :::x_'.X' not
+R17524:17524 Top.or <> q:274 var
+R17530:17531 Top.or <> :::x_'.Y' not
+R17529:17529 Top.or <> q:274 var
+R17535:17536 Top.or <> :::x_'.Z' not
+R17534:17534 Top.or <> q:274 var
+def 17577:17580 <> si2q
+R17587:17587 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 17583:17583 <> w:275
+R17595:17597 Top.or <> vec def
+binder 17591:17591 <> v:276
+R17604:17607 Top.or <> quat def
+R17613:17615 Top.or <> l2v def
+R17617:17617 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R17625:17625 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17627:17628 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17632:17633 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17637:17638 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17642:17642 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17626:17626 Top.or <> w:275 var
+R17630:17631 Top.or <> :::x_'.1' not
+R17629:17629 Top.or <> v:276 var
+R17635:17636 Top.or <> :::x_'.2' not
+R17634:17634 Top.or <> v:276 var
+R17640:17641 Top.or <> :::x_'.3' not
+R17639:17639 Top.or <> v:276 var
+def 17700:17704 <> qconj
+R17712:17715 Top.or <> quat def
+binder 17707:17707 <> q:277
+R17720:17723 Top.or <> quat def
+R17729:17731 Top.or <> l2v def
+R17733:17733 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R17739:17739 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17743:17744 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17749:17750 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17755:17756 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17761:17761 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17741:17742 Top.or <> :::x_'.W' not
+R17740:17740 Top.or <> q:277 var
+R17745:17745 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R17747:17748 Top.or <> :::x_'.X' not
+R17746:17746 Top.or <> q:277 var
+R17751:17751 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R17753:17754 Top.or <> :::x_'.Y' not
+R17752:17752 Top.or <> q:277 var
+R17757:17757 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R17759:17760 Top.or <> :::x_'.Z' not
+R17758:17758 Top.or <> q:277 var
+def 17802:17805 <> aa2q
+R17812:17814 Top.or <> vec def
+binder 17808:17808 <> n:278
+R17825:17825 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 17820:17821 <> θ:279
+R17830:17833 Top.or <> quat def
+R17839:17841 Top.or <> l2v def
+R17843:17843 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R17849:17849 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17860:17861 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17878:17879 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17896:17897 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17914:17914 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17850:17852 Coq.Reals.Rtrigo_def <> cos def
+R17857:17857 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R17855:17856 Top.or <> θ:279 var
+R17872:17874 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R17862:17864 Coq.Reals.Rtrigo_def <> sin def
+R17869:17869 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R17867:17868 Top.or <> θ:279 var
+R17876:17877 Top.or <> :::x_'.1' not
+R17875:17875 Top.or <> n:278 var
+R17890:17892 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R17880:17882 Coq.Reals.Rtrigo_def <> sin def
+R17887:17887 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R17885:17886 Top.or <> θ:279 var
+R17894:17895 Top.or <> :::x_'.2' not
+R17893:17893 Top.or <> n:278 var
+R17908:17910 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R17898:17900 Coq.Reals.Rtrigo_def <> sin def
+R17905:17905 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R17903:17904 Top.or <> θ:279 var
+R17912:17913 Top.or <> :::x_'.3' not
+R17911:17911 Top.or <> n:278 var
+def 17954:17957 <> qlen
+R17964:17967 Top.or <> quat def
+binder 17960:17960 <> q:280
+R17972:17972 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R17979:17982 Coq.Reals.R_sqrt <> sqrt def
+R18017:18019 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R18005:18007 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R17993:17995 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R17987:17989 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R17985:17986 Top.or <> :::x_'.W' not
+R17984:17984 Top.or <> q:280 var
+R17991:17992 Top.or <> :::x_'.W' not
+R17990:17990 Top.or <> q:280 var
+R17999:18001 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R17997:17998 Top.or <> :::x_'.X' not
+R17996:17996 Top.or <> q:280 var
+R18003:18004 Top.or <> :::x_'.X' not
+R18002:18002 Top.or <> q:280 var
+R18011:18013 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18009:18010 Top.or <> :::x_'.Y' not
+R18008:18008 Top.or <> q:280 var
+R18015:18016 Top.or <> :::x_'.Y' not
+R18014:18014 Top.or <> q:280 var
+R18023:18025 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18021:18022 Top.or <> :::x_'.Z' not
+R18020:18020 Top.or <> q:280 var
+R18027:18028 Top.or <> :::x_'.Z' not
+R18026:18026 Top.or <> q:280 var
+def 18075:18079 <> qunit
+R18086:18089 Top.or <> quat def
+binder 18082:18082 <> q:281
+R18108:18110 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18102:18105 Top.or <> qlen def
+R18107:18107 Top.or <> q:281 var
+def 18172:18175 <> qadd
+R18186:18189 Top.or <> quat def
+binder 18178:18179 <> q1:282
+binder 18181:18182 <> q2:283
+R18194:18197 Top.or <> quat def
+R18202:18205 Top.or <> vadd def
+R18210:18211 Top.or <> q2:283 var
+R18207:18208 Top.or <> q1:282 var
+def 18272:18275 <> qopp
+R18282:18285 Top.or <> quat def
+binder 18278:18278 <> q:284
+R18290:18293 Top.or <> quat def
+R18298:18302 Top.or <> vcmul def
+R18309:18309 Top.or <> q:284 var
+def 18369:18372 <> qsub
+R18383:18386 Top.or <> quat def
+binder 18375:18376 <> q1:285
+binder 18378:18379 <> q2:286
+R18391:18394 Top.or <> quat def
+R18399:18402 Top.or <> qadd def
+R18404:18405 Top.or <> q1:285 var
+R18408:18411 Top.or <> qopp def
+R18413:18414 Top.or <> q2:286 var
+def 18452:18455 <> qmul
+R18466:18469 Top.or <> quat def
+binder 18458:18459 <> q1:287
+binder 18461:18462 <> q2:288
+R18474:18477 Top.or <> quat def
+R18485:18487 Top.or <> l2v def
+R18489:18489 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R18495:18495 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18549:18557 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18611:18620 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18674:18682 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18736:18736 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18535:18537 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R18521:18523 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R18507:18509 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R18500:18502 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18498:18499 Top.or <> :::x_'.W' not
+R18496:18497 Top.or <> q1:287 var
+R18505:18506 Top.or <> :::x_'.W' not
+R18503:18504 Top.or <> q2:288 var
+R18514:18516 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18512:18513 Top.or <> :::x_'.X' not
+R18510:18511 Top.or <> q1:287 var
+R18519:18520 Top.or <> :::x_'.X' not
+R18517:18518 Top.or <> q2:288 var
+R18528:18530 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18526:18527 Top.or <> :::x_'.Y' not
+R18524:18525 Top.or <> q1:287 var
+R18533:18534 Top.or <> :::x_'.Y' not
+R18531:18532 Top.or <> q2:288 var
+R18542:18544 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18540:18541 Top.or <> :::x_'.Z' not
+R18538:18539 Top.or <> q1:287 var
+R18547:18548 Top.or <> :::x_'.Z' not
+R18545:18546 Top.or <> q2:288 var
+R18597:18599 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R18583:18585 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R18569:18571 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R18562:18564 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18560:18561 Top.or <> :::x_'.W' not
+R18558:18559 Top.or <> q1:287 var
+R18567:18568 Top.or <> :::x_'.X' not
+R18565:18566 Top.or <> q2:288 var
+R18576:18578 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18574:18575 Top.or <> :::x_'.X' not
+R18572:18573 Top.or <> q1:287 var
+R18581:18582 Top.or <> :::x_'.W' not
+R18579:18580 Top.or <> q2:288 var
+R18590:18592 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18588:18589 Top.or <> :::x_'.Y' not
+R18586:18587 Top.or <> q1:287 var
+R18595:18596 Top.or <> :::x_'.Z' not
+R18593:18594 Top.or <> q2:288 var
+R18604:18606 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18602:18603 Top.or <> :::x_'.Z' not
+R18600:18601 Top.or <> q1:287 var
+R18609:18610 Top.or <> :::x_'.Y' not
+R18607:18608 Top.or <> q2:288 var
+R18660:18662 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R18646:18648 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R18632:18634 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R18625:18627 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18623:18624 Top.or <> :::x_'.W' not
+R18621:18622 Top.or <> q1:287 var
+R18630:18631 Top.or <> :::x_'.Y' not
+R18628:18629 Top.or <> q2:288 var
+R18639:18641 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18637:18638 Top.or <> :::x_'.X' not
+R18635:18636 Top.or <> q1:287 var
+R18644:18645 Top.or <> :::x_'.Z' not
+R18642:18643 Top.or <> q2:288 var
+R18653:18655 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18651:18652 Top.or <> :::x_'.Y' not
+R18649:18650 Top.or <> q1:287 var
+R18658:18659 Top.or <> :::x_'.W' not
+R18656:18657 Top.or <> q2:288 var
+R18667:18669 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18665:18666 Top.or <> :::x_'.Z' not
+R18663:18664 Top.or <> q1:287 var
+R18672:18673 Top.or <> :::x_'.X' not
+R18670:18671 Top.or <> q2:288 var
+R18722:18724 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R18708:18710 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R18694:18696 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R18687:18689 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18685:18686 Top.or <> :::x_'.W' not
+R18683:18684 Top.or <> q1:287 var
+R18692:18693 Top.or <> :::x_'.Z' not
+R18690:18691 Top.or <> q2:288 var
+R18701:18703 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18699:18700 Top.or <> :::x_'.X' not
+R18697:18698 Top.or <> q1:287 var
+R18706:18707 Top.or <> :::x_'.Y' not
+R18704:18705 Top.or <> q2:288 var
+R18715:18717 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18713:18714 Top.or <> :::x_'.Y' not
+R18711:18712 Top.or <> q1:287 var
+R18720:18721 Top.or <> :::x_'.X' not
+R18718:18719 Top.or <> q2:288 var
+R18729:18731 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R18727:18728 Top.or <> :::x_'.Z' not
+R18725:18726 Top.or <> q1:287 var
+R18734:18735 Top.or <> :::x_'.W' not
+R18732:18733 Top.or <> q2:288 var
+def 18845:18849 <> qmatL
+R18856:18859 Top.or <> quat def
+binder 18852:18852 <> q:289
+R18883:18883 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18887:18887 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18891:18891 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18895:18895 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18899:18899 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18885:18886 Top.or <> :::x_'.W' not
+R18884:18884 Top.or <> q:289 var
+R18889:18890 Top.or <> :::x_'.X' not
+R18888:18888 Top.or <> q:289 var
+R18893:18894 Top.or <> :::x_'.Y' not
+R18892:18892 Top.or <> q:289 var
+R18897:18898 Top.or <> :::x_'.Z' not
+R18896:18896 Top.or <> q:289 var
+R18870:18870 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18872:18872 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18874:18874 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18876:18876 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18878:18878 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18907:18909 Top.or <> l2m def
+R18911:18911 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R18919:18921 Top.or <> l2v def
+R18923:18923 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R18929:18929 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18931:18931 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18933:18933 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18935:18935 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18937:18937 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18942:18942 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18955:18956 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18967:18968 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18979:18980 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18991:18991 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18943:18943 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18945:18945 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18948:18948 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18951:18951 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18954:18954 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18946:18946 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R18949:18949 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R18952:18952 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R18957:18957 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18959:18959 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18961:18961 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18964:18964 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18966:18966 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18962:18962 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R18969:18969 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18971:18971 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18973:18973 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18975:18975 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18978:18978 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18976:18976 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R18981:18981 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18983:18983 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18986:18986 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18988:18988 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18990:18990 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R18984:18984 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+def 19006:19010 <> qmatR
+R19017:19020 Top.or <> quat def
+binder 19013:19013 <> q:290
+R19044:19044 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19048:19048 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19052:19052 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19056:19056 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19060:19060 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19046:19047 Top.or <> :::x_'.W' not
+R19045:19045 Top.or <> q:290 var
+R19050:19051 Top.or <> :::x_'.X' not
+R19049:19049 Top.or <> q:290 var
+R19054:19055 Top.or <> :::x_'.Y' not
+R19053:19053 Top.or <> q:290 var
+R19058:19059 Top.or <> :::x_'.Z' not
+R19057:19057 Top.or <> q:290 var
+R19031:19031 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19033:19033 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19035:19035 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19037:19037 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19039:19039 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19068:19070 Top.or <> l2m def
+R19072:19072 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R19080:19082 Top.or <> l2v def
+R19084:19084 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R19090:19090 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19092:19092 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19094:19094 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19096:19096 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19098:19098 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19103:19103 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19116:19117 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19128:19129 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19140:19141 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19152:19152 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19104:19104 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19106:19106 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19109:19109 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19112:19112 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19115:19115 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19107:19107 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R19110:19110 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R19113:19113 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R19118:19118 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19120:19120 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19122:19122 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19124:19124 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19127:19127 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19125:19125 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R19130:19130 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19132:19132 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19135:19135 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19137:19137 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19139:19139 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19133:19133 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R19142:19142 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19144:19144 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19146:19146 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19149:19149 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19151:19151 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R19147:19147 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+prf 19162:19171 <> qmatL_spec
+binder 19181:19181 <> p:291
+binder 19183:19183 <> q:292
+R19194:19196 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19186:19189 Top.or <> qmul def
+R19191:19191 Top.or <> p:291 var
+R19193:19193 Top.or <> q:292 var
+R19197:19201 Top.or <> mmulv def
+R19213:19213 Top.or <> q:292 var
+R19204:19208 Top.or <> qmatL def
+R19210:19210 Top.or <> p:291 var
+def 19317:19325 <> mcolsOrth
+binder 19328:19328 <> r:293
+binder 19330:19330 <> c:294
+R19338:19340 Top.or <> mat def
+R19342:19342 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R19344:19344 Top.or <> r:293 var
+R19346:19346 Top.or <> c:294 var
+binder 19334:19334 <> M:295
+R19359:19359 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R19381:19386 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R19420:19420 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 19367:19367 <> i:296
+R19370:19374 Top.or <> vunit def
+R19377:19377 Top.or <> M:295 var
+R19379:19379 Top.or <> i:296 var
+binder 19394:19394 <> j:297
+binder 19396:19396 <> k:298
+R19405:19408 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19400:19403 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R19399:19399 Top.or <> j:297 var
+R19404:19404 Top.or <> k:298 var
+R19412:19416 Top.or <> ::vec_scope:x_'_|_'_x not
+R19409:19409 Top.or <> M:295 var
+R19411:19411 Top.or <> j:297 var
+R19417:19417 Top.or <> M:295 var
+R19419:19419 Top.or <> k:298 var
+def 19464:19468 <> morth
+binder 19471:19471 <> n:299
+R19479:19482 Top.or <> smat abbrev
+R19484:19484 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R19486:19486 Top.or <> n:299 var
+R19486:19486 Top.or <> n:299 var
+binder 19475:19475 <> M:300
+R19511:19513 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19499:19502 Top.or <> mmul def
+R19510:19510 Top.or <> M:300 var
+R19506:19507 Top.or <> :::x_'\T' not
+R19505:19505 Top.or <> M:300 var
+R19514:19517 Top.or <> mat1 def
+def 19572:19575 <> SOnP
+binder 19578:19578 <> n:301
+R19586:19589 Top.or <> smat abbrev
+R19591:19591 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R19593:19593 Top.or <> n:301 var
+R19593:19593 Top.or <> n:301 var
+binder 19582:19582 <> M:302
+R19605:19605 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R19613:19617 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R19606:19610 Top.or <> morth def
+R19612:19612 Top.or <> M:302 var
+R19618:19618 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19625:19628 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19619:19622 Top.or <> mdet def
+R19624:19624 Top.or <> M:302 var
+prf 19639:19657 <> morth_iff_mcolsOrth
+binder 19669:19669 <> n:303
+R19677:19680 Top.or <> smat abbrev
+R19682:19682 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R19684:19684 Top.or <> n:303 var
+R19684:19684 Top.or <> n:303 var
+binder 19673:19673 <> M:304
+R19695:19699 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R19688:19692 Top.or <> morth def
+R19694:19694 Top.or <> M:304 var
+R19700:19708 Top.or <> mcolsOrth def
+R19710:19710 Top.or <> M:304 var
+R19744:19746 Coq.Init.Datatypes <> nat ind
+binder 19740:19740 <> n:305
+R19756:19759 Top.or <> smat abbrev
+R19761:19761 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R19763:19763 Top.or <> n:305 var
+R19763:19763 Top.or <> n:305 var
+binder 19750:19750 <> M:306
+binder 19752:19752 <> N:307
+R19774:19776 Top.or <> vec def
+R19778:19778 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R19780:19780 Top.or <> n:305 var
+binder 19767:19767 <> a:308
+binder 19769:19769 <> b:309
+prf 19790:19803 <> morth_keep_dot
+R19814:19817 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19807:19811 Top.or <> morth def
+R19813:19813 Top.or <> M prfax
+R19840:19843 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19852:19852 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19818:19821 Top.or <> vdot def
+R19834:19837 Top.or <> :::x_'*v'_x not
+R19833:19833 Top.or <> M prfax
+R19838:19838 Top.or <> b prfax
+R19825:19828 Top.or <> :::x_'*v'_x not
+R19824:19824 Top.or <> M prfax
+R19829:19829 Top.or <> a prfax
+R19844:19847 Top.or <> vdot def
+R19851:19851 Top.or <> b prfax
+R19849:19849 Top.or <> a prfax
+prf 19878:19894 <> morth_keep_length
+R19905:19908 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19898:19902 Top.or <> morth def
+R19904:19904 Top.or <> M prfax
+R19922:19924 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19909:19912 Top.or <> vlen def
+R19916:19919 Top.or <> :::x_'*v'_x not
+R19915:19915 Top.or <> M prfax
+R19920:19920 Top.or <> a prfax
+R19925:19928 Top.or <> vlen def
+R19930:19930 Top.or <> a prfax
+prf 19967:19982 <> morth_keep_angle
+R19993:19996 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19986:19990 Top.or <> morth def
+R19992:19992 Top.or <> M prfax
+R20017:20019 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19997:19997 Top.or <> ::vec_scope:x_'/_'_x not
+R20004:20009 Top.or <> ::vec_scope:x_'/_'_x not
+R20016:20016 Top.or <> ::vec_scope:x_'/_'_x not
+R19999:20002 Top.or <> :::x_'*v'_x not
+R19998:19998 Top.or <> M prfax
+R20003:20003 Top.or <> a prfax
+R20011:20014 Top.or <> :::x_'*v'_x not
+R20010:20010 Top.or <> M prfax
+R20015:20015 Top.or <> b prfax
+R20021:20024 Top.or <> ::vec_scope:x_'/_'_x not
+R20020:20020 Top.or <> a prfax
+R20025:20025 Top.or <> b prfax
+prf 20052:20067 <> SO3_keep_v3cross
+R20082:20085 Top.or <> smat abbrev
+R20087:20087 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 20078:20078 <> M:310
+R20100:20102 Top.or <> vec def
+R20104:20104 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 20093:20093 <> a:311
+binder 20095:20095 <> b:312
+R20116:20119 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20110:20113 Top.or <> SOnP def
+R20115:20115 Top.or <> M:310 var
+R20140:20142 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20120:20120 Top.or <> ::vec_scope:x_'\x'_x not
+R20127:20132 Top.or <> ::vec_scope:x_'\x'_x not
+R20139:20139 Top.or <> ::vec_scope:x_'\x'_x not
+R20122:20125 Top.or <> :::x_'*v'_x not
+R20121:20121 Top.or <> M:310 var
+R20126:20126 Top.or <> a:311 var
+R20134:20137 Top.or <> :::x_'*v'_x not
+R20133:20133 Top.or <> M:310 var
+R20138:20138 Top.or <> b:312 var
+R20144:20148 Top.or <> :::x_'*v'_x not
+R20155:20155 Top.or <> :::x_'*v'_x not
+R20143:20143 Top.or <> M:310 var
+R20150:20153 Top.or <> ::vec_scope:x_'\x'_x not
+R20149:20149 Top.or <> a:311 var
+R20154:20154 Top.or <> b:312 var
+def 20187:20188 <> Rx
+R20196:20196 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 20191:20192 <> θ:313
+R20201:20204 Top.or <> smat abbrev
+R20206:20206 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20216:20218 Top.or <> l2m def
+R20220:20220 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20228:20232 Top.or <> vzero def
+R20234:20234 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20243:20243 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20253:20254 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20275:20276 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20296:20296 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20244:20244 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20246:20247 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20249:20250 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20252:20252 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20255:20255 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20257:20258 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20265:20266 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20274:20274 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20259:20261 Coq.Reals.Rtrigo_def <> cos def
+R20263:20264 Top.or <> θ:313 var
+R20267:20267 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R20268:20270 Coq.Reals.Rtrigo_def <> sin def
+R20272:20273 Top.or <> θ:313 var
+R20277:20277 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20279:20280 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20287:20288 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20295:20295 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20281:20283 Coq.Reals.Rtrigo_def <> sin def
+R20285:20286 Top.or <> θ:313 var
+R20289:20291 Coq.Reals.Rtrigo_def <> cos def
+R20293:20294 Top.or <> θ:313 var
+def 20311:20312 <> Ry
+R20320:20320 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 20315:20316 <> θ:314
+R20325:20328 Top.or <> smat abbrev
+R20330:20330 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20340:20342 Top.or <> l2m def
+R20344:20344 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20352:20356 Top.or <> vzero def
+R20358:20358 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20367:20367 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20387:20388 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20398:20399 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20420:20420 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20368:20368 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20375:20376 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20378:20379 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20386:20386 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20369:20371 Coq.Reals.Rtrigo_def <> cos def
+R20373:20374 Top.or <> θ:314 var
+R20380:20382 Coq.Reals.Rtrigo_def <> sin def
+R20384:20385 Top.or <> θ:314 var
+R20389:20389 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20391:20392 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20394:20395 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20397:20397 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20400:20400 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20408:20409 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20411:20412 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20419:20419 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20401:20401 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R20402:20404 Coq.Reals.Rtrigo_def <> sin def
+R20406:20407 Top.or <> θ:314 var
+R20413:20415 Coq.Reals.Rtrigo_def <> cos def
+R20417:20418 Top.or <> θ:314 var
+def 20434:20435 <> Rz
+R20443:20443 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 20438:20439 <> θ:315
+R20448:20451 Top.or <> smat abbrev
+R20453:20453 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20463:20465 Top.or <> l2m def
+R20467:20467 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20475:20479 Top.or <> vzero def
+R20481:20481 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20490:20490 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20511:20512 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20532:20533 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20543:20543 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20491:20491 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20498:20499 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20507:20508 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20510:20510 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20492:20494 Coq.Reals.Rtrigo_def <> cos def
+R20496:20497 Top.or <> θ:315 var
+R20500:20500 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R20501:20503 Coq.Reals.Rtrigo_def <> sin def
+R20505:20506 Top.or <> θ:315 var
+R20513:20513 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20520:20521 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20528:20529 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20531:20531 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20514:20516 Coq.Reals.Rtrigo_def <> sin def
+R20518:20519 Top.or <> θ:315 var
+R20522:20524 Coq.Reals.Rtrigo_def <> cos def
+R20526:20527 Top.or <> θ:315 var
+R20534:20534 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20536:20537 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20539:20540 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20542:20542 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+ax 20556:20558 <> θ1
+ax 20560:20562 <> θ2
+ax 20564:20566 <> θ3
+R20569:20569 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+abbrev 20581:20582 <> c1
+R20588:20590 Coq.Reals.Rtrigo_def <> cos def
+R20592:20594 Top.or <> θ1 defax
+abbrev 20607:20608 <> c2
+R20614:20616 Coq.Reals.Rtrigo_def <> cos def
+R20618:20620 Top.or <> θ2 defax
+abbrev 20633:20634 <> c3
+R20640:20642 Coq.Reals.Rtrigo_def <> cos def
+R20644:20646 Top.or <> θ3 defax
+abbrev 20659:20660 <> s1
+R20666:20668 Coq.Reals.Rtrigo_def <> sin def
+R20670:20672 Top.or <> θ1 defax
+abbrev 20685:20686 <> s2
+R20692:20694 Coq.Reals.Rtrigo_def <> sin def
+R20696:20698 Top.or <> θ2 defax
+abbrev 20711:20712 <> s3
+R20718:20720 Coq.Reals.Rtrigo_def <> sin def
+R20722:20724 Top.or <> θ3 defax
+def 20740:20743 <> S123
+R20757:20757 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 20746:20747 <> c1:319
+binder 20749:20750 <> c2:320
+binder 20752:20753 <> c3:321
+R20762:20765 Top.or <> smat abbrev
+R20767:20767 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20777:20779 Top.or <> l2m def
+R20781:20781 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20789:20793 Top.or <> vzero def
+R20795:20795 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R20807:20807 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20865:20869 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20927:20931 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20956:20956 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20808:20808 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20816:20817 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20840:20841 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20864:20864 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20811:20813 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20809:20810 Top.or <> c2:320 var
+R20814:20815 Top.or <> c3:321 var
+R20830:20832 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R20825:20827 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20820:20822 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20818:20819 Top.or <> s1 abbrev
+R20823:20824 Top.or <> s2 abbrev
+R20828:20829 Top.or <> c3:321 var
+R20835:20837 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20833:20834 Top.or <> c1:319 var
+R20838:20839 Top.or <> s3 abbrev
+R20854:20856 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R20849:20851 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20844:20846 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20842:20843 Top.or <> c1:319 var
+R20847:20848 Top.or <> s2 abbrev
+R20852:20853 Top.or <> c3:321 var
+R20859:20861 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20857:20858 Top.or <> s1 abbrev
+R20862:20863 Top.or <> s3 abbrev
+R20870:20870 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20878:20879 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20902:20903 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20926:20926 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20873:20875 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20871:20872 Top.or <> c2:320 var
+R20876:20877 Top.or <> s3 abbrev
+R20892:20894 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R20887:20889 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20882:20884 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20880:20881 Top.or <> s1 abbrev
+R20885:20886 Top.or <> s2 abbrev
+R20890:20891 Top.or <> s3 abbrev
+R20897:20899 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20895:20896 Top.or <> c1:319 var
+R20900:20901 Top.or <> c3:321 var
+R20916:20918 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R20911:20913 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20906:20908 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20904:20905 Top.or <> c1:319 var
+R20909:20910 Top.or <> s2 abbrev
+R20914:20915 Top.or <> s3 abbrev
+R20921:20923 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20919:20920 Top.or <> s1 abbrev
+R20924:20925 Top.or <> c3:321 var
+R20932:20932 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20937:20938 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20946:20947 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20955:20955 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R20933:20934 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R20935:20936 Top.or <> s2 abbrev
+R20941:20943 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20939:20940 Top.or <> s1 abbrev
+R20944:20945 Top.or <> c2:320 var
+R20950:20952 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R20948:20949 Top.or <> c1:319 var
+R20953:20954 Top.or <> c2:320 var
+prf 20968:20976 <> S123_spec
+R20993:20995 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20980:20983 Top.or <> S123 def
+R20985:20986 Top.or <> c1 abbrev
+R20988:20989 Top.or <> c2 abbrev
+R20991:20992 Top.or <> c3 abbrev
+R20996:20999 Top.or <> mmul def
+R21027:21028 Top.or <> Rx def
+R21030:21032 Top.or <> θ1 defax
+R21002:21005 Top.or <> mmul def
+R21017:21018 Top.or <> Ry def
+R21020:21022 Top.or <> θ2 defax
+R21008:21009 Top.or <> Rz def
+R21011:21013 Top.or <> θ3 defax
+prf 21060:21076 <> S123_phi_singular
+R21098:21098 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 21087:21088 <> φ:322
+binder 21090:21091 <> θ:323
+binder 21093:21094 <> ψ:324
+R21127:21158 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21101:21101 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R21111:21115 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R21126:21126 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R21104:21106 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21102:21103 Top.or <> θ:323 var
+R21109:21109 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R21107:21108 Coq.Reals.Rtrigo1 <> PI def
+R21118:21120 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21116:21117 Top.or <> θ:323 var
+R21124:21124 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R21121:21121 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R21122:21123 Coq.Reals.Rtrigo1 <> PI def
+R21172:21172 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 21166:21168 <> φ':325
+R21175:21181 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R21189:21190 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R21188:21188 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 21182:21184 <> ψ':326
+R21210:21212 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21191:21191 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21200:21201 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21204:21205 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21209:21209 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21192:21195 Top.or <> S123 def
+R21197:21199 Top.or <> φ':325 var
+R21202:21203 Top.or <> θ:323 var
+R21206:21208 Top.or <> ψ':326 var
+R21213:21213 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21221:21222 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21225:21226 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21229:21229 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21214:21217 Top.or <> S123 def
+R21219:21220 Top.or <> φ:322 var
+R21223:21224 Top.or <> θ:323 var
+R21227:21228 Top.or <> ψ:324 var
+def 21348:21352 <> atan2
+R21361:21361 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 21355:21355 <> y:327
+binder 21357:21357 <> x:328
+R21366:21366 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 21385:21387 <> ϕ'
+R21394:21397 Top.or <> smat abbrev
+R21399:21399 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 21390:21390 <> C:329
+R21407:21410 Coq.Reals.Ratan <> atan def
+R21418:21420 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R21416:21417 Top.or <> :::x_'.2' not
+R21414:21415 Top.or <> :::x_'.3' not
+R21413:21413 Top.or <> C:329 var
+R21424:21425 Top.or <> :::x_'.3' not
+R21422:21423 Top.or <> :::x_'.3' not
+R21421:21421 Top.or <> C:329 var
+def 21440:21442 <> θ'
+R21449:21452 Top.or <> smat abbrev
+R21454:21454 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 21445:21445 <> C:330
+R21462:21465 Coq.Reals.Ratan <> asin def
+R21468:21468 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R21472:21473 Top.or <> :::x_'.1' not
+R21470:21471 Top.or <> :::x_'.3' not
+R21469:21469 Top.or <> C:330 var
+def 21488:21490 <> ψ'
+R21497:21500 Top.or <> smat abbrev
+R21502:21502 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 21493:21493 <> C:331
+R21510:21513 Coq.Reals.Ratan <> atan def
+R21521:21523 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R21519:21520 Top.or <> :::x_'.1' not
+R21517:21518 Top.or <> :::x_'.2' not
+R21516:21516 Top.or <> C:331 var
+R21527:21528 Top.or <> :::x_'.1' not
+R21525:21526 Top.or <> :::x_'.1' not
+R21524:21524 Top.or <> C:331 var
+def 21555:21558 <> qrot
+R21567:21570 Top.or <> quat def
+binder 21561:21561 <> q:332
+binder 21563:21563 <> p:333
+R21575:21578 Top.or <> quat def
+R21583:21586 Top.or <> qmul def
+R21589:21592 Top.or <> qmul def
+R21594:21594 Top.or <> q:332 var
+R21596:21596 Top.or <> p:333 var
+R21600:21604 Top.or <> qconj def
+R21606:21606 Top.or <> q:332 var
+def 21621:21625 <> qrotv
+R21632:21635 Top.or <> quat def
+binder 21628:21628 <> q:334
+R21641:21643 Top.or <> vec def
+binder 21639:21639 <> a:335
+R21650:21652 Top.or <> vec def
+R21659:21662 Top.or <> q2im def
+R21665:21668 Top.or <> qrot def
+R21670:21670 Top.or <> q:334 var
+R21673:21676 Top.or <> im2q def
+R21678:21678 Top.or <> a:335 var
+prf 21716:21726 <> qrot_keep_w
+R21740:21743 Top.or <> quat def
+binder 21736:21736 <> p:336
+binder 21738:21738 <> q:337
+R21758:21760 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21746:21746 Top.or <> :::x_'.W' not
+R21755:21757 Top.or <> :::x_'.W' not
+R21747:21750 Top.or <> qrot def
+R21752:21752 Top.or <> q:337 var
+R21754:21754 Top.or <> p:336 var
+R21762:21763 Top.or <> :::x_'.W' not
+R21761:21761 Top.or <> p:336 var
+prf 21816:21828 <> qrot_keep_dot
+R21841:21844 Top.or <> quat def
+binder 21839:21839 <> q:338
+R21852:21854 Top.or <> vec def
+binder 21848:21848 <> a:339
+binder 21850:21850 <> b:340
+R21888:21890 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21860:21863 Top.or <> vdot def
+R21878:21882 Top.or <> qrotv def
+R21884:21884 Top.or <> q:338 var
+R21886:21886 Top.or <> b:340 var
+R21866:21870 Top.or <> qrotv def
+R21872:21872 Top.or <> q:338 var
+R21874:21874 Top.or <> a:339 var
+R21891:21894 Top.or <> vdot def
+R21898:21898 Top.or <> b:340 var
+R21896:21896 Top.or <> a:339 var
+def 21930:21933 <> ab2q
+R21942:21944 Top.or <> vec def
+binder 21936:21936 <> a:341
+binder 21938:21938 <> b:342
+R21951:21954 Top.or <> quat def
+R21959:21962 Top.or <> si2q def
+R21965:21968 Top.or <> vdot def
+R21972:21972 Top.or <> b:342 var
+R21970:21970 Top.or <> a:341 var
+R21976:21982 Top.or <> v3cross def
+R21984:21984 Top.or <> a:341 var
+R21986:21986 Top.or <> b:342 var
+def 22001:22005 <> ab2q'
+R22014:22016 Top.or <> vec def
+binder 22008:22008 <> a:343
+binder 22010:22010 <> b:344
+R22023:22026 Top.or <> quat def
+R22031:22034 Top.or <> qmul def
+R22037:22040 Top.or <> im2q def
+R22042:22042 Top.or <> b:344 var
+R22046:22050 Top.or <> qconj def
+R22053:22056 Top.or <> im2q def
+R22058:22058 Top.or <> a:343 var
+prf 22069:22081 <> ab2q_eq_ab2q'
+binder 22092:22092 <> a:345
+binder 22094:22094 <> b:346
+R22105:22107 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22097:22100 Top.or <> ab2q def
+R22102:22102 Top.or <> a:345 var
+R22104:22104 Top.or <> b:346 var
+R22108:22112 Top.or <> ab2q' def
+R22114:22114 Top.or <> a:345 var
+R22116:22116 Top.or <> b:346 var
+prf 22143:22149 <> ab2q_eq
+R22167:22169 Top.or <> vec def
+binder 22161:22161 <> a:347
+binder 22163:22163 <> b:348
+R22184:22187 Top.or <> ab2q def
+R22189:22189 Top.or <> a:347 var
+R22191:22191 Top.or <> b:348 var
+binder 22179:22179 <> q:349
+R22207:22211 Top.or <> qrotv def
+R22213:22213 Top.or <> q:349 var
+R22215:22215 Top.or <> a:347 var
+binder 22202:22202 <> c:350
+R22227:22230 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22220:22224 Top.or <> vunit def
+R22226:22226 Top.or <> a:347 var
+R22238:22241 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22231:22235 Top.or <> vunit def
+R22237:22237 Top.or <> b:348 var
+R22250:22252 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22242:22245 Top.or <> ab2q def
+R22247:22247 Top.or <> b:348 var
+R22249:22249 Top.or <> c:350 var
+R22253:22253 Top.or <> q:349 var
+prf 22279:22286 <> vlen_vv'
+R22302:22304 Top.or <> vec def
+binder 22298:22298 <> v:351
+R22314:22317 Top.or <> quat def
+binder 22310:22310 <> q:352
+R22327:22329 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22321:22324 Top.or <> vlen def
+R22326:22326 Top.or <> v:351 var
+R22330:22333 Top.or <> vlen def
+R22336:22340 Top.or <> qrotv def
+R22342:22342 Top.or <> q:352 var
+R22344:22344 Top.or <> v:351 var
+prf 22384:22393 <> vangle_vv'
+R22410:22410 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 22405:22406 <> θ:353
+R22418:22421 Top.or <> quat def
+binder 22414:22414 <> q:354
+R22435:22437 Top.or <> vec def
+binder 22425:22425 <> n:355
+binder 22427:22428 <> v0:356
+binder 22430:22431 <> v1:357
+R22454:22454 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 22443:22444 <> s0:358
+binder 22446:22447 <> s1:359
+binder 22449:22450 <> s2:360
+R22468:22471 Top.or <> vadd def
+R22508:22512 Top.or <> :::x_'\.*'_x not
+R22506:22507 Top.or <> s2:360 var
+R22513:22513 Top.or <> n:355 var
+R22474:22477 Top.or <> vadd def
+R22495:22499 Top.or <> :::x_'\.*'_x not
+R22493:22494 Top.or <> s1:359 var
+R22500:22501 Top.or <> v1:357 var
+R22482:22486 Top.or <> :::x_'\.*'_x not
+R22480:22481 Top.or <> s0:358 var
+R22487:22488 Top.or <> v0:356 var
+binder 22464:22464 <> v:361
+R22531:22535 Top.or <> qrotv def
+R22537:22537 Top.or <> q:354 var
+R22539:22539 Top.or <> v:361 var
+binder 22526:22527 <> v':362
+R22547:22547 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22556:22560 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22548:22550 Coq.Reals.Rdefinitions RbaseSymbolsImpl Rlt defax
+R22554:22555 Top.or <> θ:353 var
+R22561:22561 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22575:22580 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22562:22564 Coq.Reals.Rdefinitions RbaseSymbolsImpl Rlt defax
+R22566:22567 Top.or <> θ:353 var
+R22571:22571 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R22572:22573 Coq.Reals.Rtrigo1 <> PI def
+R22581:22581 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22590:22592 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22582:22586 Top.or <> vunit def
+R22588:22589 Top.or <> v0:356 var
+R22593:22593 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22602:22604 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22594:22598 Top.or <> vunit def
+R22600:22601 Top.or <> v1:357 var
+R22605:22605 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22631:22633 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22627:22629 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22606:22610 Top.or <> vnorm def
+R22613:22619 Top.or <> v3cross def
+R22621:22622 Top.or <> v0:356 var
+R22624:22625 Top.or <> v1:357 var
+R22630:22630 Top.or <> n:355 var
+R22634:22634 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22656:22658 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22635:22635 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22648:22651 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22636:22641 Top.or <> vangle def
+R22646:22647 Top.or <> v1:357 var
+R22643:22644 Top.or <> v0:356 var
+R22654:22654 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R22652:22653 Top.or <> θ:353 var
+R22659:22659 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22665:22667 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22662:22663 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R22660:22661 Top.or <> s0:358 var
+R22668:22668 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22674:22679 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22671:22672 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R22669:22670 Top.or <> s1:359 var
+R22711:22713 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22680:22685 Top.or <> vangle def
+R22700:22704 Top.or <> vperp def
+R22709:22709 Top.or <> n:355 var
+R22706:22707 Top.or <> v':362 var
+R22688:22692 Top.or <> vperp def
+R22696:22696 Top.or <> n:355 var
+R22694:22694 Top.or <> v:361 var
+R22714:22715 Top.or <> θ:353 var
+def 22794:22798 <> rotaa
+R22806:22806 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 22801:22802 <> θ:363
+R22814:22816 Top.or <> vec def
+binder 22810:22810 <> n:364
+R22826:22828 Top.or <> vec def
+binder 22822:22822 <> a:365
+R22835:22837 Top.or <> vec def
+R22846:22849 Top.or <> vadd def
+R22927:22931 Top.or <> vcmul def
+R22943:22949 Top.or <> v3cross def
+R22951:22951 Top.or <> n:364 var
+R22953:22953 Top.or <> a:365 var
+R22934:22936 Coq.Reals.Rtrigo_def <> sin def
+R22938:22939 Top.or <> θ:363 var
+R22852:22855 Top.or <> vadd def
+R22879:22883 Top.or <> vcmul def
+R22895:22898 Top.or <> vsub def
+R22903:22907 Top.or <> vcmul def
+R22920:22920 Top.or <> n:364 var
+R22910:22913 Top.or <> vdot def
+R22917:22917 Top.or <> n:364 var
+R22915:22915 Top.or <> a:365 var
+R22900:22900 Top.or <> a:365 var
+R22886:22888 Coq.Reals.Rtrigo_def <> cos def
+R22890:22891 Top.or <> θ:363 var
+R22858:22862 Top.or <> vcmul def
+R22875:22875 Top.or <> n:364 var
+R22865:22868 Top.or <> vdot def
+R22872:22872 Top.or <> n:364 var
+R22870:22870 Top.or <> a:365 var
+prf 22965:22985 <> qrot_spec_byAxisAngle
+R23002:23002 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 22997:22998 <> θ:366
+R23012:23014 Top.or <> vec def
+binder 23006:23006 <> n:367
+binder 23008:23008 <> v:368
+R23029:23032 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23022:23026 Top.or <> vunit def
+R23028:23028 Top.or <> n:367 var
+R23052:23054 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23033:23037 Top.or <> qrotv def
+R23040:23043 Top.or <> aa2q def
+R23045:23045 Top.or <> n:367 var
+R23047:23048 Top.or <> θ:366 var
+R23051:23051 Top.or <> v:368 var
+R23055:23059 Top.or <> rotaa def
+R23061:23062 Top.or <> θ:366 var
+R23064:23064 Top.or <> n:367 var
+R23066:23066 Top.or <> v:368 var
+def 23098:23102 <> qzero
+R23106:23109 Top.or <> quat def
+R23115:23117 Top.or <> l2v def
+R23119:23119 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R23127:23127 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23129:23130 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23132:23133 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23135:23136 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23138:23138 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+prf 23148:23157 <> qrot_twice
+R23175:23178 Top.or <> quat def
+binder 23169:23170 <> q1:369
+binder 23172:23173 <> q2:370
+R23184:23186 Top.or <> vec def
+binder 23182:23182 <> v:371
+R23204:23207 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23195:23198 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R23193:23194 Top.or <> q1:369 var
+R23199:23203 Top.or <> qzero def
+R23219:23222 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23210:23213 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R23208:23209 Top.or <> q2:370 var
+R23214:23218 Top.or <> qzero def
+R23249:23251 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23223:23226 Top.or <> qrot def
+R23228:23229 Top.or <> q2:370 var
+R23232:23235 Top.or <> qrot def
+R23237:23238 Top.or <> q1:369 var
+R23241:23244 Top.or <> im2q def
+R23246:23246 Top.or <> v:371 var
+R23252:23255 Top.or <> qrot def
+R23258:23261 Top.or <> qmul def
+R23263:23264 Top.or <> q2:370 var
+R23266:23267 Top.or <> q1:369 var
+R23271:23274 Top.or <> im2q def
+R23276:23276 Top.or <> v:371 var
+def 23343:23345 <> q2m
+R23352:23355 Top.or <> quat def
+binder 23348:23348 <> q:372
+R23379:23379 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23383:23383 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23387:23387 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23391:23391 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23395:23395 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23381:23382 Top.or <> :::x_'.W' not
+R23380:23380 Top.or <> q:372 var
+R23385:23386 Top.or <> :::x_'.X' not
+R23384:23384 Top.or <> q:372 var
+R23389:23390 Top.or <> :::x_'.Y' not
+R23388:23388 Top.or <> q:372 var
+R23393:23394 Top.or <> :::x_'.Z' not
+R23392:23392 Top.or <> q:372 var
+R23366:23366 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23368:23368 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23370:23370 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23372:23372 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23374:23374 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23403:23405 Top.or <> l2m def
+R23407:23407 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R23415:23417 Top.or <> l2v def
+R23419:23419 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R23425:23425 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23427:23427 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23429:23429 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23431:23431 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23439:23439 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23481:23486 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23528:23533 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23575:23575 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23440:23440 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23456:23456 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23468:23468 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23480:23480 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23452:23452 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R23448:23448 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R23444:23444 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R23442:23442 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23446:23446 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23450:23450 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23454:23454 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23458:23459 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23467:23467 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23463:23463 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R23461:23461 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23465:23465 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23470:23471 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23479:23479 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23475:23475 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R23473:23473 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23477:23477 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23487:23487 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23499:23499 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23515:23515 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23527:23527 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23489:23490 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23498:23498 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23494:23494 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R23492:23492 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23496:23496 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23511:23511 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R23507:23507 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R23503:23503 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R23501:23501 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23505:23505 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23509:23509 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23513:23513 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23517:23518 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23526:23526 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23522:23522 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R23520:23520 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23524:23524 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23534:23534 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23546:23546 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23558:23558 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23574:23574 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R23536:23537 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23545:23545 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23541:23541 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R23539:23539 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23543:23543 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23548:23549 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23557:23557 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23553:23553 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R23551:23551 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23555:23555 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23570:23570 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R23566:23566 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R23562:23562 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R23560:23560 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23564:23564 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23568:23568 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R23572:23572 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+prf 23585:23592 <> q2m_spec
+R23608:23611 Top.or <> quat def
+binder 23604:23604 <> q:373
+R23619:23621 Top.or <> vec def
+binder 23615:23615 <> v:374
+R23635:23638 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23628:23632 Top.or <> qunit def
+R23634:23634 Top.or <> q:373 var
+R23648:23650 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23639:23643 Top.or <> qrotv def
+R23645:23645 Top.or <> q:373 var
+R23647:23647 Top.or <> v:374 var
+R23651:23651 Top.or <> :::x_'*v'_x not
+R23657:23661 Top.or <> :::x_'*v'_x not
+R23652:23654 Top.or <> q2m def
+R23656:23656 Top.or <> q:373 var
+R23662:23662 Top.or <> v:374 var
