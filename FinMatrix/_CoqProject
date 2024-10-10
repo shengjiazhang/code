@@ -1,0 +1,81 @@
+# ===================================================================
+# Copyright 2024 Zhengpu Shi
+#  This file is part of FinMatrix. It is distributed under the MIT
+#  "expat license". You should have recieved a LICENSE file with it.
+# ===================================================================
+
+-R ./FinMatrix FinMatrix
+
+-arg -w -arg -notation-overridden
+-arg -w -arg -hiding-delimiting-key
+# -arg -w -arg -deprecated-hint-without-locality
+# -arg -w -arg -redundant-canonical-projection
+# -arg -w -arg -ambiguous-paths
+# -arg -w -arg -local-declaration
+# -arg -w -arg -future-coercion-class-field
+# -arg -w -arg -extraction-logical-axiom
+
+# ========== CoqExt ====================
+FinMatrix/CoqExt/LogicExt.v
+FinMatrix/CoqExt/MyExtrOCamlR.v
+FinMatrix/CoqExt/Basic.v
+FinMatrix/CoqExt/BoolExt.v
+FinMatrix/CoqExt/StrExt.v
+FinMatrix/CoqExt/ListExt.v
+FinMatrix/CoqExt/Hierarchy.v
+FinMatrix/CoqExt/ElementType.v
+FinMatrix/CoqExt/NatExt.v
+FinMatrix/CoqExt/PositiveExt.v
+FinMatrix/CoqExt/ZExt.v
+FinMatrix/CoqExt/QExt.v
+FinMatrix/CoqExt/QcExt.v
+FinMatrix/CoqExt/RExt/RExtBase.v
+FinMatrix/CoqExt/RExt/RExtCvt.v
+FinMatrix/CoqExt/RExt/RExtBool.v
+FinMatrix/CoqExt/RExt/RExtLt.v
+FinMatrix/CoqExt/RExt/RExtPlus.v
+FinMatrix/CoqExt/RExt/RExtOpp.v
+FinMatrix/CoqExt/RExt/RExtMult.v
+FinMatrix/CoqExt/RExt/RExtPow.v
+FinMatrix/CoqExt/RExt/RExtInv.v
+FinMatrix/CoqExt/RExt/RExtSqr.v
+FinMatrix/CoqExt/RExt/RExtSqrt.v
+FinMatrix/CoqExt/RExt/RExtAbs.v
+FinMatrix/CoqExt/RExt/RExtSign.v
+FinMatrix/CoqExt/RExt/RExtExp.v
+FinMatrix/CoqExt/RExt/RExtLog.v
+FinMatrix/CoqExt/RExt/RExtRpower.v
+FinMatrix/CoqExt/RExt/RExtApprox.v
+FinMatrix/CoqExt/RExt/RExtTrigo.v
+FinMatrix/CoqExt/RExt/RExtAtan2.v
+FinMatrix/CoqExt/RExt.v
+FinMatrix/CoqExt/RStruct.v
+FinMatrix/CoqExt/RFunExt.v
+FinMatrix/CoqExt/RAnalysisExt.v
+FinMatrix/CoqExt/Complex.v
+FinMatrix/CoqExt/LinearSpace.v
+
+# ========== Matrix ====================
+FinMatrix/Matrix/Fin.v
+FinMatrix/Matrix/Sequence.v
+FinMatrix/Matrix/Vector.v
+FinMatrix/Matrix/Matrix.v
+FinMatrix/Matrix/BMatrix.v
+FinMatrix/Matrix/Permutation.v
+FinMatrix/Matrix/MatrixDet.v
+FinMatrix/Matrix/MatrixDet_test.v
+FinMatrix/Matrix/MatrixGauss.v
+FinMatrix/Matrix/MatrixGauss_test.v
+FinMatrix/Matrix/MatrixInvertible.v
+FinMatrix/Matrix/MatrixInvAM.v
+FinMatrix/Matrix/MatrixInvGE.v
+FinMatrix/Matrix/MatrixOrth.v
+FinMatrix/Matrix/MatrixModule.v
+FinMatrix/Matrix/MatrixNat.v
+FinMatrix/Matrix/MatrixZ.v
+FinMatrix/Matrix/MatrixQ.v
+FinMatrix/Matrix/MatrixQc.v
+FinMatrix/Matrix/MatrixR.v
+FinMatrix/Matrix/MatrixC.v
+FinMatrix/Matrix/MatrixRFun.v
+FinMatrix/Matrix/VectorSpace.v
