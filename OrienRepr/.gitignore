@@ -1,0 +1,16 @@
+**/Makefile.coq
+**/Makefile.coq.conf
+**/.Makefile.coq.d
+**/*.vo
+**/*.vok
+**/*.vos
+**/*.glob
+**/*.aux
+**/.lia.cache
+**/.nia.cache
+**/.lra.cache
+**/.nra.cache
+**/.csdp.cache
+**/*.cmi
+**/ocaml_test*.ml
+**/ocaml_test*.mli

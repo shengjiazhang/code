@@ -1,0 +1,22 @@
+-R ./OrienRepr "OrienRepr"
+
+-arg -w -arg -notation-overridden
+-arg -w -arg -hiding-delimiting-key
+-arg -w -arg -extraction-opaque-accessed
+# -arg -w -arg -deprecated-hint-without-locality
+# -arg -w -arg -redundant-canonical-projection
+# -arg -w -arg -ambiguous-paths
+# -arg -w -arg -local-declaration
+# -arg -w -arg -future-coercion-class-field
+# -arg -w -arg -extraction-logical-axiom
+
+OrienRepr/MathBase.v
+OrienRepr/Orien2D.v
+OrienRepr/AxisAngle.v
+OrienRepr/RotationMatrix3D.v
+OrienRepr/EulerAngle.v
+OrienRepr/Orien3D.v
+OrienRepr/Quaternion.v
+OrienRepr/QuaternionAdvanced.v
+OrienRepr/OrienRepr.v
+
