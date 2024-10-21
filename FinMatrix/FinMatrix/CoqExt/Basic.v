@@ -33,8 +33,12 @@ Require Export Coq.Classes.SetoidTactics. (* add_morphism_tactic *)
 Require Export Coq.Relations.Relations.   (* equivalence *)
 Require Export Coq.Bool.Sumbool.          (* sumbool_not *)
 Require Export Coq.Bool.Bool.             (* reflect *)
-Require Export ExtrOcamlBasic ExtrOcamlNatInt MyExtrOCamlR.
-Require Export LogicExt BoolExt StrExt.
+Require Export ExtrOcamlBasic.
+Require Import ExtrOcamlNatInt.
+Require Import FinMatrix.CoqExt.MyExtrOCamlR.
+Require Export FinMatrix.CoqExt.LogicExt.
+Require Export FinMatrix.CoqExt.BoolExt.
+Require Export FinMatrix.CoqExt.StrExt.
 Require Export List.
 Require Export Ring Field.
 

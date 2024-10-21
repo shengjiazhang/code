@@ -18,7 +18,8 @@
  *)
 
 Require Import Extraction.
-Require Export ListExt NatExt.
+Require Export FinMatrix.CoqExt.ListExt.
+Require Export FinMatrix.CoqExt.NatExt.
 
 Generalizable Variable tA Aadd Azero Aopp Amul Aone Ainv.
 

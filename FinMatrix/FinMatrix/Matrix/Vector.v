@@ -27,9 +27,11 @@
  *)
 
 
-Require Export ListExt Hierarchy.
-Require Import RExt.
-Require Export Fin Sequence.
+Require Export FinMatrix.CoqExt.ListExt.
+Require Export FinMatrix.CoqExt.Hierarchy.
+Require Import FinMatrix.CoqExt.RExt.
+Require Export FinMatrix.Matrix.Fin.
+Require Export FinMatrix.Matrix.Sequence.
 Require Import Extraction.
 
 Generalizable Variable tA Aadd Azero Aopp Amul Aone Ainv Ale Alt Altb Aleb a2r.
@@ -66,7 +68,10 @@ Notation "a .[ i ]" := (vnth _ _ a i) : vec_scope.
 (** i = j -> a.[nat2fin i] = a.[nat2fin j] *)
 Lemma vnth_eq : forall {tA n} (a : @vec tA n) i j (Hi: i < n) (Hj: j < n),
     i = j -> a.[nat2fin i Hi] = a.[nat2fin j Hj].
-Proof. intros. subst. f_equal. apply fin_eq_iff; auto. Qed.
+Proof.
+  intros. subst. apply f_equal. fin.
+Qed.
+(* Proof. intros. subst. f_equal. apply fin_eq_iff; auto. Qed. *)
 
 (* Note that: these notatiosn are dangerous.
    For example, `@nat2finS 3 0` ~ `@nat2finS 3 3` are all expected index.
@@ -90,6 +95,8 @@ Lemma veq_iff_vnth : forall {tA} {n} (a b : @vec tA n),
     a = b <-> forall (i : 'I_n), a.[i] = b.[i].
 Proof.
   intros. split; intros; subst; auto.
+  (* extensionality 是一个原则，通常用于描述对象的等同性。
+  具体来说，对于集合或函数而言，如果它们的元素或输出是相同的，则可以认为它们是相同的。 *)
   extensionality i; auto.
 Qed.
 
@@ -107,9 +114,12 @@ Lemma vnth_sameIdx_imply : forall {tA n} {a b : @vec tA n} {i} {H1 H2 H3 H4 : i 
     a (nat2fin i H3) = b (nat2fin i H4).
 Proof.
   intros.
+  replace (nat2fin i H3) with (nat2fin i H1);
+  replace (nat2fin i H4) with (nat2fin i H2); auto; fin.
+  (* intros.
   replace (nat2fin i H3 : 'I_n) with (nat2fin i H1 : 'I_n).
   replace (nat2fin i H4 : 'I_n) with (nat2fin i H2 : 'I_n); auto.
-  apply fin_eq_iff; auto. apply fin_eq_iff; auto.
+  apply fin_eq_iff; auto. apply fin_eq_iff; auto. *)
 Qed.
 
 (** {u = v} + {u <> v} *)
@@ -135,7 +145,10 @@ Qed.
 
 (** The equality of 0-D vector *)
 Lemma v0eq : forall {tA} (a b : @vec tA 0), a = b.
-Proof. intros. apply veq_iff_vnth. intros. exfalso. apply fin0_False; auto. Qed.
+Proof.
+  intros. apply veq_iff_vnth. intro. fin.
+Qed.
+(* Proof. intros. apply veq_iff_vnth. intros. exfalso. apply fin0_False; auto. Qed. *)
 
 Lemma v0neq : forall {tA} (a b : @vec tA 0), a <> b -> False.
 Proof. intros. destruct H. apply v0eq. Qed.
@@ -143,25 +156,38 @@ Proof. intros. destruct H. apply v0eq. Qed.
 (** The equality of 1-D vector *)
 Lemma v1eq_iff : forall {tA} (a b : @vec tA 1), a = b <-> a.1 = b.1.
 Proof.
-  intros. split; intros; subst; auto. unfold nat2finS in H; simpl in H.
+  intros. split; intros; subst; auto.
+  apply veq_iff_vnth. intros. destruct i. 
+  destruct i. apply (vnth_sameIdx_imply H). lia.
+  (* intros. split; intros; subst; auto. unfold nat2finS in H; simpl in H.
   repeat destruct nat_ltb_reflect; try lia.
   apply veq_iff_vnth; intros. destruct i as [n Hn].
   destruct n; [apply (vnth_sameIdx_imply H)|].
-  lia.
+  lia. *)
 Qed.
 
 Lemma v1neq_iff : forall {tA} (a b : @vec tA 1), a <> b <-> a.1 <> b.1.
-Proof. intros. rewrite v1eq_iff. tauto. Qed.
+Proof.
+  intros. rewrite v1eq_iff. tauto.
+Qed.
+(* Proof. intros. rewrite v1eq_iff. tauto. Qed. *)
 
 (** The equality of 2-D vector *)
 Lemma v2eq_iff : forall {tA} (a b : @vec tA 2), a = b <-> a.1 = b.1 /\ a.2 = b.2.
 Proof.
-  intros. split; intros; subst; auto. unfold nat2finS in H; simpl in H.
+  intros. split; intros.
+  - split; subst; auto.
+  - destruct H. apply veq_iff_vnth. intros.
+    destruct i.
+    destruct i. apply (vnth_sameIdx_imply H).
+    destruct i. apply (vnth_sameIdx_imply H0).
+    lia.
+  (* intros. split; intros; subst; auto. unfold nat2finS in H; simpl in H.
   destruct H as [H1 H2]. repeat destruct nat_ltb_reflect; try lia.
   apply veq_iff_vnth; intros. destruct i as [n Hn].
   destruct n; [apply (vnth_sameIdx_imply H1)|].
   destruct n; [apply (vnth_sameIdx_imply H2)|].
-  lia.
+  lia. *)
 Qed.
 
 Lemma v2neq_iff : forall {tA} (a b : @vec tA 2), a <> b <-> (a.1 <> b.1 \/ a.2 <> b.2).
@@ -172,7 +198,7 @@ Lemma v3eq_iff : forall {tA} (a b : @vec tA 3),
     a = b <-> a.1 = b.1 /\ a.2 = b.2 /\ a.3 = b.3.
 Proof.
   intros. split; intros; subst; auto. unfold nat2finS in H; simpl in H.
-  destruct H as [H1 [H2 H3]]. repeat destruct nat_ltb_reflect; try lia.
+  destruct H as [H1 [H2 H3]]. (* repeat destruct nat_ltb_reflect; try lia. *)
   apply veq_iff_vnth; intros. destruct i as [n Hn].
   destruct n; [apply (vnth_sameIdx_imply H1)|].
   destruct n; [apply (vnth_sameIdx_imply H2)|].
@@ -189,7 +215,7 @@ Lemma v4eq_iff : forall {tA} (a b : @vec tA 4),
     a = b <-> a.1 = b.1 /\ a.2 = b.2 /\ a.3 = b.3 /\ a.4 = b.4.
 Proof.
   intros. split; intros; subst; auto. unfold nat2finS in H; simpl in H.
-  destruct H as [H1 [H2 [H3 H4]]]. repeat destruct nat_ltb_reflect; try lia.
+  destruct H as [H1 [H2 [H3 H4]]]. (* repeat destruct nat_ltb_reflect; try lia. *)
   apply veq_iff_vnth; intros. destruct i as [n Hn].
   destruct n; [apply (vnth_sameIdx_imply H1)|].
   destruct n; [apply (vnth_sameIdx_imply H2)|].
@@ -207,11 +233,21 @@ Lemma vneq_iff_exist_vnth_neq : forall {tA n} (a b : @vec tA n),
     a <> b <-> exists i, a.[i] <> b.[i].
 Proof.
   intros. rewrite veq_iff_vnth. split; intros.
+  - apply not_all_ex_not. auto. 
+  - apply ex_not_not_all. auto.
+  (* intros. rewrite veq_iff_vnth. split; intros.
   - apply not_all_ex_not; auto.
-  - apply ex_not_not_all; auto.
+  - apply ex_not_not_all; auto. *)
 Qed.
+(* not_all_ex_not : 
+      forall (U : Type) (P : U -> Prop),
+      ~ (forall n : U, P n) -> exists n : U, ~ P n.
 
-
+   ex_not_not_all :
+      forall (U : Type) (P : U -> Prop),
+      (exists n : U, ~ P n) -> ~ (forall n : U, P n).
+ *)
+ 
 (* ======================================================================= *)
 (** ** Cast between two [vec] type that are actually of equal dimensions *)
 
@@ -229,6 +265,7 @@ Section vrepeat.
   Context {tA} {Azero : tA} {n : nat}.
   
   Definition vrepeat (a : tA) : @vec tA n := fun _ => a.
+  (* Definition vrepeat' (a : tA) : @vec tA n := fun (i : 'I_n) => a. *)
 
   (** (repeat a).i = a *)
   Lemma vnth_vrepeat : forall a i, (vrepeat a).[i] = a.
@@ -270,6 +307,12 @@ Section f2v_v2f.
            | _ => Azero
            end.
   
+  (* Definition v2f' {n} (a : @vec tA n) : (nat -> tA) :=
+    fun i => match (lt_ge_dec i n) with
+            | left E => a (nat2fin i E)
+            | _ => Azero
+            end. *)
+  
   (** (v2f a) i = a.[nat2fin i] *)
   Lemma nth_v2f : forall {n} (a : @vec tA n) (i : nat) (H : i < n),
       (v2f a) i = a.[nat2fin i H].
@@ -310,10 +353,14 @@ Section l2v_v2l.
   Context {tA} (Azero : tA).
 
   Definition l2v {n : nat} (l : list tA) : vec n := fun (i : 'I_n) => nth i l Azero.
+  (* Definition l2v' {n} (l : list tA) : vec n := fun (i : 'I_n) => nth i l Azero. *)
 
   (** (l2v l).i = nth i l *)
-  Lemma vnth_l2v : forall {n} (l : list tA) (i : 'I_n), (@l2v n l).[i] = nth i l Azero.
-  Proof. auto. Qed.
+  Lemma vnth_l2v : forall {n} (l : list tA) (i : 'I_n), (@l2v n l).[i] = nth i l Azero. 
+  Proof. 
+    unfold l2v. auto.
+  Qed.
+  (* Proof. auto. Qed. *)
 
   (** l2v l1 = l2v l2 -> l1 = l2 *)
   Lemma l2v_inj : forall {n} (l1 l2 : list tA),
@@ -325,11 +372,15 @@ Section l2v_v2l.
   Qed.
 
   Definition v2l {n} (a : vec n) : list tA := map a (finseq n).
+  (* Definition v2l' {n} (a : vec n) : list tA := map a (finseq n). *)
 
   (** nth i (v2l a) = a.i *)
   Lemma nth_v2l : forall {n} (a : vec n) (i : nat) (E : i < n),
       nth i (v2l a) Azero = a (nat2fin i E).
-  Proof. intros. unfold v2l. rewrite nth_map_finseq with (E:=E). auto. Qed.
+  Proof.
+    intros. unfold v2l. rewrite nth_map_finseq with (E:=E). auto.
+  Qed.
+  (* Proof. intros. unfold v2l. rewrite nth_map_finseq with (E:=E). auto. Qed. *)
   
   (** length (v2l a) = n *)
   Lemma v2l_length : forall {n} (a : vec n), length (v2l a) = n.
@@ -345,19 +396,28 @@ Section l2v_v2l.
   (** l2v (v2l a) = a *)
   Lemma l2v_v2l : forall {n} (a : vec n), (@l2v n (v2l a)) = a.
   Proof.
+    intros. apply veq_iff_vnth. intros.
+    rewrite vnth_l2v. destruct i. rewrite nth_v2l with (E:=E). auto.
+  Qed.
+  (* Proof.
     intros. apply veq_iff_vnth; intros.
     rewrite vnth_l2v. rewrite nth_v2l with (E:=fin2nat_lt _).
     rewrite nat2fin_fin2nat. auto.
-  Qed.
+  Qed. *)
 
   (** v2l (l2v l) = l *)
-  Lemma v2l_l2v : forall {n} (l : list tA), length l = n -> v2l (@l2v n l) = l.
-  Proof.
+  Lemma v2l_l2v : forall {n} (l : list tA), length l = n -> v2l (@l2v n l) = l. 
+  Proof. 
+    intros. apply list_eq_ext with (Azero:=Azero) (n:=n); auto; intros.
+    - rewrite nth_v2l with (E:=H0). rewrite vnth_l2v. auto.
+    - apply v2l_length.
+  Qed.
+  (* Proof.
     intros. apply list_eq_ext with (Azero:=Azero)(n:=n); intros; auto.
     - rewrite nth_v2l with (E:=H0). rewrite vnth_l2v.
       rewrite fin2nat_nat2fin. auto.
     - apply v2l_length.
-  Qed.
+  Qed. *)
   
   (** ∀ v, (∃ l, l2v l = a) *)
   Lemma l2v_surj : forall {n} (a : vec n), (exists l, @l2v n l = a).
@@ -2237,6 +2297,8 @@ Section vadd.
   Notation vzero := (vzero Azero).
 
   Definition vadd {n} (a b : vec n) : vec n := vmap2 Aadd a b.
+  (* Definition vadd' {n} (a b : vec n) : vec n := fun i => Aadd (a.[i]) (b.[i]). *)
+
   Infix "+" := vadd : vec_scope.
 
   (** (a + b) + c = a + (b + c) *)
@@ -2314,6 +2376,7 @@ Section vopp.
   Infix "+" := vadd : vec_scope.
 
   Definition vopp {n} (a : vec n) : vec n := vmap Aopp a.
+  (* Definition vopp' {n} (a : vec n) : vec n := fun i => Aopp a.[i]. *)
   Notation "- a" := (vopp a) : vec_scope.
 
   (** (- a).i = - (a.i) *)

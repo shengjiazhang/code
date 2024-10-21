@@ -8,8 +8,8 @@
   date      : 2023.12
  *)
 
-Require Export Complex.
-Require Export MatrixModule.
+Require Export FinMatrix.CoqExt.Complex.
+Require Export FinMatrix.Matrix.MatrixModule.
 
 
 (* ######################################################################### *)

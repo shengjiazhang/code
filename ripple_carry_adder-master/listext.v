@@ -12,9 +12,9 @@
 *)
 
 Require Import List.
-Require Import tacdef.  (* listRec *)
-Require Import simple.  (* even_listp *)
-Require Import metaind. (* listInd2  *)
+Require Import Top.tacdef.  (* listRec *)
+Require Import Top.simple.  (* even_listp *)
+Require Import Top.metaind. (* listInd2  *)
 Require Import Lia.   (* to make rmLen work *)
 
 Notation "x :+ y" := (x ++ y :: nil) (at level 30, right associativity)  : list_scope.
@@ -25,6 +25,7 @@ Fixpoint get_odd_elements {A:Type} (lst:list A) : list A :=
   | x :: nil => x :: nil
   | x :: _ :: xs => x :: get_odd_elements xs
   end.
+
 
 
 Section Nil.
@@ -39,14 +40,35 @@ Arguments nil {A}.
 
 Lemma nil_or_not : forall l, l=nil \/ ~ (l=nil).
 Proof.
-  intro; case l; auto.  (* case l=nil solved *)
-  intros; right; apply cons_not_nil.
+  intros. destruct l.
+  - left; reflexivity.
+  - right; apply cons_not_nil.
 Qed.
 
+Lemma list_2 : forall l (a : A), 0 < length l -> l = (hd a l :: tl l).
+Proof.
+  intros. destruct l. simpl. inversion H. 
+  simpl. reflexivity.
+Qed.
 
 Lemma list_3 : forall l (a:A), 1 < length l ->
   l = (hd a l)::(hd a (tail l))::(tail (tail l)).
-Proof. intros l a; rmLen; auto. Qed.
+Proof.
+  intros l a Hlen.
+  (* 分析 l 的可能结构，利用 Hlen：1 < length l 意味着 l 至少有两个元素 *)
+  destruct l as [|x [|y l']].
+  - (* 情况 1：l 是空列表 *)
+    simpl in Hlen. (* 这里会导致 1 < 0 的矛盾 *)
+    inversion Hlen.
+  - (* 情况 2：l 是一个单元素列表 *)
+    simpl in Hlen. (* 这里会导致 1 < 1 的矛盾 *)
+    inversion Hlen. inversion H0.
+  - (* 情况 3：l 至少有两个元素 *)
+    (* 现在 l = x :: y :: l' *)
+    simpl. (* 简化右侧表达式 *)
+    reflexivity.
+Qed.
+(* Proof. intros l a. rmLen; auto. Qed. *)
 
 End Nil.
 
@@ -203,7 +225,7 @@ Qed.
 
 End RevList.
 
-#[export] Hint Rewrite <- app_nil_end app_comm_cons : base_list.
+#[export] Hint Rewrite <- app_nil_r app_comm_cons : base_list.
 #[export] Hint Rewrite cons_l_cons app_l_cons : base_list.
 #[export] Hint Rewrite rev_involutive : base_list.
 

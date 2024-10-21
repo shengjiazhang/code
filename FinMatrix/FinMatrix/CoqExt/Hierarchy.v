@@ -100,9 +100,9 @@
  *)
 
 Require Import Coq.Logic.Description. (* constructive_definite_description *)
-Require Export Basic.
+Require Export FinMatrix.CoqExt.Basic.
 Require Import Reals.
-Require RExtAbs.
+Require FinMatrix.CoqExt.RExt.RExtAbs.
 Import ListNotations.
 
 Open Scope nat_scope.

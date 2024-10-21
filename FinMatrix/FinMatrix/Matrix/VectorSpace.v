@@ -27,8 +27,8 @@
  *)
 
 
-Require Import LinearSpace.
-Require Import Matrix.
+Require Import FinMatrix.CoqExt.LinearSpace.
+Require Import FinMatrix.Matrix.Matrix.
 
 Set Implicit Arguments.
 Unset Strict Implicit.

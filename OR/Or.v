@@ -80,6 +80,12 @@ Definition fin2nat {n} : fin n -> nat :=
   | S n0 => fun (f : fin (S n0)) => proj1_sig f    (* if n>0, then proj1(f) *)
   end.
 
+Definition fin2nat' {n} (i : fin n) : nat.
+  destruct n. 
+  - apply 0.  
+  - destruct i. apply x.
+Defined.
+
 (* proj1_sig 是 Coq 中用于处理依赖类型 sig 的投影函数，它从一个 sig 类型的构造器中提取第一个组件。
 sig 是一种用于表示依赖对的类型，其中每个值由两个部分组成：
 第一部分是类型 A 的一个元素。
@@ -127,6 +133,7 @@ Defined.
 Notation "# i" := (nat2finS i) (at level 2).
 
 Compute @fin2nat 3 (@nat2finS 2 2).
+Compute @fin2nat' 3 (@nat2finS 2 2).
 
 (* 拿到fin n集合中的所有元素 *)
 Definition finseq (n : nat) : list (fin n) := 
@@ -301,12 +308,6 @@ Proof. intros. subst. f_equal. Qed.
 
 
 
-
-
-
-
-
-
 (* 矩阵r行c列 *)
 Definition mat A r c := (@vec (@vec A c) r).
 Notation smat A n :=(mat A n n).
@@ -456,7 +457,7 @@ Definition msubmatNat (M : nat -> nat -> R) (i j : nat) : nat -> nat -> R :=
   fun i0 j0 =>
     M (if i0 ?< i then i0 else S i0) (if j0 ?< j then j0 else S j0).
   
-(* 得到(M i j)的代数余子矩阵 *)
+(* 得到(M i j)的余子矩阵 *)
 Definition msubmat {n} (M : smat R (S n)) (i j : 'I_(S n)) : smat R n :=
   fun i0 j0 =>
     let i1 := if (fin2nat i0) ?< (fin2nat i) then #(fin2nat i0) else #(S (fin2nat i0)) in

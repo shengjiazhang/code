@@ -12,7 +12,7 @@
  *)
 
 Require Export Init.Nat PeanoNat Arith Lia.
-Require Export ElementType.
+Require Export FinMatrix.CoqExt.ElementType.
 
 Open Scope nat_scope.
 

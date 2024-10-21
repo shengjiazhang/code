@@ -26,9 +26,9 @@
  *)
 
 
-Require Export Hierarchy.
-Require Export ListExt.
-Require Export Vector.
+Require Export FinMatrix.CoqExt.Hierarchy.
+Require Export FinMatrix.CoqExt.ListExt.
+Require Export FinMatrix.Matrix.Vector.
 Require Reals.
 
 
@@ -144,6 +144,8 @@ Section l2m_m2l.
   (** dlist to matrix *)
   Definition l2m {r c} (d : dlist tA) : mat tA r c :=
     l2v (vzero Azero) (map (l2v Azero) d).
+  (* Definition l2m' {r c} (d : dlist tA) : mat tA r c :=
+    @l2v (vec c) (vzero Azero) r (map (@l2v tA Azero c) d). *)
 
   Lemma m2l_length : forall {r c} (M : mat tA r c), length (m2l M) = r.
   Proof. intros. unfold m2l. rewrite map_length. rewrite v2l_length; auto. Qed.
@@ -1189,10 +1191,11 @@ Section madd.
   Notation mat r c := (mat tA r c).
   Infix "+" := Aadd : A_scope.
   Notation vadd := (@vadd _ Aadd).
-  Infix "+" := vadd : vec_scope.
+  Infix "+" := vadd : vec_scope. 
   Notation mat0 := (@mat0 _ Azero).
   
   Definition madd {r c} (M N : mat r c) : mat r c := mmap2 Aadd M N.
+  (* Definition madd' {r c} (M N : mat r c) : mat r c := vmap2 vadd M N. *)
   Infix "+" := madd : mat_scope.
   
   (** (M+N)[i,j] = M[i,j] + N[i,j] *)

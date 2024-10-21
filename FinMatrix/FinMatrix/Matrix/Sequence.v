@@ -8,10 +8,10 @@
   date      : 2022.06
  *)
 
-Require Export Basic.
-Require Export NatExt.
-Require Export ListExt.
-Require Export Hierarchy.
+Require Export FinMatrix.CoqExt.Basic.
+Require Export FinMatrix.CoqExt.NatExt.
+Require Export FinMatrix.CoqExt.ListExt.
+Require Export FinMatrix.CoqExt.Hierarchy.
 
 Generalizable Variables tA Aadd Azero Aopp Amul Aone Ainv Ale Alt.
 Generalizable Variables tB Badd Bzero.
@@ -33,7 +33,10 @@ Lemma seq_prop_S_iff : forall (P : nat -> Prop) (n : nat),
 Proof.
   intros. split; intros.
   - split; auto.
-  - destruct H. bdestruct (i =? n); subst; auto. apply H; lia.
+  - destruct H. destruct (i ??= n); subst; auto. apply H. lia.
+  (* intros. split; intros.
+  - split; auto.
+  - destruct H. bdestruct (i =? n); subst; auto. apply H; lia. *)
 Qed.
 
 (* ======================================================================= *)

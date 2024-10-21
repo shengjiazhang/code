@@ -23,8 +23,9 @@
      |v| = √<v, v>
  *)
 
-Require Export RExt RFunExt.
-Require Export MatrixModule.
+Require Export FinMatrix.CoqExt.RExt. 
+Require Export FinMatrix.CoqExt.RFunExt.
+Require Export FinMatrix.Matrix.MatrixModule.
 
 (* Make sure sqrt:R->R, Hierarchy.le_trans *)
 Export Hierarchy R_sqrt.

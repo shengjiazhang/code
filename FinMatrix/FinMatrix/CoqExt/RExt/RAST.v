@@ -23,10 +23,10 @@
      it is inspired by Marisa Kirisame<lolisa@marisa.moe>.
 *)
 
+(* 
+Require Export BasicConfig. *)
 
-Require Export BasicConfig.
-
-Require Export RExt.
+Require Export FinMatrix.CoqExt.RExt.
 Require Import String.
 
 

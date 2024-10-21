@@ -66,7 +66,10 @@
       该矩阵应该满足：每一行相加都相等，每一列相加也相等。
  *)
 
-Require Export ListExt NatExt Permutation Matrix.
+Require Export FinMatrix.CoqExt.ListExt.
+Require Export FinMatrix.CoqExt.NatExt.
+Require Export FinMatrix.Matrix.Permutation.
+Require Export FinMatrix.Matrix.Matrix.
 
 Generalizable Variable tA Aadd Azero Aopp Amul Aone Ainv.
 
