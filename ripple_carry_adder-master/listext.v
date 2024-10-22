@@ -51,9 +51,18 @@ Proof.
   simpl. reflexivity.
 Qed.
 
+Print lt.
+Print le.
+
 Lemma list_3 : forall l (a:A), 1 < length l ->
   l = (hd a l)::(hd a (tail l))::(tail (tail l)).
 Proof.
+  intros. destruct l as [|x [|y l']].
+  - inversion H.
+  - simpl in H. inversion H. inversion H1.
+  - simpl. auto.
+Qed.
+(* Proof.
   intros l a Hlen.
   (* 分析 l 的可能结构，利用 Hlen：1 < length l 意味着 l 至少有两个元素 *)
   destruct l as [|x [|y l']].
@@ -67,7 +76,7 @@ Proof.
     (* 现在 l = x :: y :: l' *)
     simpl. (* 简化右侧表达式 *)
     reflexivity.
-Qed.
+Qed. *)
 (* Proof. intros l a. rmLen; auto. Qed. *)
 
 End Nil.

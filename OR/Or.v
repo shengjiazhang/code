@@ -86,7 +86,7 @@ Definition fin2nat' {n} (i : fin n) : nat.
   - destruct i. apply x.
 Defined.
 
-(* proj1_sig 是 Coq 中用于处理依赖类型 sig 的投影函数，它从一个 sig 类型的构造器中提取第一个组件。
+(* proj1_sig 是 Coq 中用于处理类型 sig 的投影函数，它从一个 sig 类型的构造器中提取第一个组件。
 sig 是一种用于表示依赖对的类型，其中每个值由两个部分组成：
 第一部分是类型 A 的一个元素。
 第二部分是一个关于第一部分的证明。

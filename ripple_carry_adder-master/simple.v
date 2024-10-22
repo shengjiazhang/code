@@ -51,10 +51,11 @@ Lemma one_neq_two : forall n, 0<n -> 1 <> 2 * n.
 Proof. intro; lia. Qed.
 
 Lemma even_succ : forall (n:nat),  2 * (S n) = S (S (2 * n)).
+Proof.
   intro; ring.
 Qed.
 
-Lemma succ_add1 : forall (n:nat), n+1 = S n.
+Lemma succ_add1 : forall (n:nat), n+1 = S n. 
   intro; ring.
 Qed.
 
