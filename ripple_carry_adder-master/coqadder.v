@@ -217,13 +217,18 @@ Definition simulate (f:tpRcAdder_s) (ab:tpPairList_b) (c:bool) : tpSumCarry_b :=
   let (x,y) := f (bplist2splist ab) (b2s c) in
   (slist2blist x,s2b y).
 (* 测试：1101+0110，初始进位为0 *)
+Compute simulate rc_adder_s [(true,false);(true,true);(false,true);(true,false)] false.
+Compute rc_adder_b [(true,false);(true,true);(false,true);(true,false)] false.
+(* 测试结果：([false; false; true; true], true) *) 
+(* 测试结果表示：sum=0011，carry=1 *)
+
+Definition simulate' (f:tpRcAdder_s) (ab:tpPairList_b) (c:bool) : tpSumCarry_b :=
+  let (x,y) := f (bpairs2spairs ab) (b2s c) in
+  (slist2blist x,s2b y).
 Compute simulate rc_adder_s 
   [(true,false);(true,true);(false,true);(true,false)] false.
 (* 测试结果：([false; false; true; true], true) *) 
 (* 测试结果表示：sum=0011，carry=1 *)
-
-
-
 
 
 
@@ -256,8 +261,8 @@ Definition ck_full_adder_truth_tbl full_adder : Prop :=
 Theorem full_adder_b_truth_tbl : 
  ck_full_adder_truth_tbl full_adder_b.
 Proof.
-  unfold ck_full_adder_truth_tbl.
-  destruct a,b,cin; reflexivity.
+  unfold ck_full_adder_truth_tbl. destruct a, b, cin; cbv; auto.
+  (* destruct a,b,cin; reflexivity. *)
 Qed.
 
 (* behavior level formal verification. *)
@@ -272,8 +277,8 @@ Definition ck_full_adder_s_ok
 Theorem full_adder_s_high_level_verification : 
  ck_full_adder_s_ok full_adder_s.
 Proof.
-  unfold ck_full_adder_s_ok.
-  destruct a, b, cin; reflexivity.
+  unfold ck_full_adder_s_ok. destruct a, b, cin; cbv; auto.
+  (* destruct a, b, cin; reflexivity. *)
 Qed.
 
 
@@ -332,13 +337,14 @@ Theorem rc_adder_s_carry_red :
   forall (a b:Signal) (xy:tpPairList_s) (c:Signal),
   s2b (snd (rc_adder_s ((a,b)::xy) c)) = 
   ci ((s2b a) + (s2b b) + (s2b (snd (rc_adder_s xy c)))).
-Proof.
+Proof. 
 intros. letPairSimp.
 generalize (rc_adder_s xy c). intro. destruct t.
-simpl. unfold s2b. simpl.
-generalize (fun _ : string => true). intro.
+simpl. unfold s2b. simpl. 
+destruct (signal2bool a _); destruct (signal2bool b _); destruct (signal2bool s _); auto. 
+(* generalize (fun _ : string => true). intro.
 destruct (signal2bool a b0);destruct (signal2bool b b0);
-destruct (signal2bool s b0); reflexivity.
+destruct (signal2bool s b0); reflexivity. *)
 Qed.
 
 (* 求和的正确性 *)
@@ -348,12 +354,16 @@ Theorem rc_adder_s_sum_red :
   (si ((s2b a) + (s2b b) + (s2b (snd (rc_adder_s xy c))))) 
   :: map s2b (fst (rc_adder_s xy c)).
 Proof.
-intros. letPairSimp.
+  intros. letPairSimp.
+  destruct (rc_adder_s xy c). simpl.
+  unfold s2b. simpl.
+  destruct (signal2bool a _); destruct (signal2bool b _); destruct (signal2bool s _); auto. 
+(* intros. letPairSimp.
 generalize (rc_adder_s xy c). intro. destruct t.
 simpl. f_equal. unfold s2b. simpl. 
 generalize (fun _ : string => true). intro.
 destruct (signal2bool a b0);destruct (signal2bool b b0);
-destruct (signal2bool s b0);reflexivity.
+destruct (signal2bool s b0);reflexivity. *)
 Qed.
 
 (* 补充证明 *)
@@ -579,6 +589,10 @@ Definition gv_full_adder (f:tpFullAdder_s) (x y z: Signal) : string :=
                                                
          endmodule  ".
 
+Compute gv_half_adder half_adder_s (Bitv "a") (Bitv "b").
+
+Compute gv_full_adder full_adder_s (Bitv "a") (Bitv "b") (Bitv "c").
+
 (* 1. gv_half_adder : Signal  -> Verilog
    2. gs_half_adder : Verilog -> Signal
    给一个加法器half_adder: 
@@ -623,6 +637,9 @@ Fixpoint writeNatAux (time n : nat) (acc : string) : string :=
   end.
 Definition writeNat (n : nat) : string :=
   writeNatAux n n "".
+
+Compute writeNat 122.
+
 Definition mk_fresh (v:string) (cnt:nat) : string :=
    v ++ (writeNat cnt).
 
@@ -647,6 +664,10 @@ Fixpoint sum_split (sum:list string) (n:nat) {struct n}: string :=
   end.
 Definition c := Bitv "c".
 Definition l := [(Bitv "a1", Bitv "b1"); (Bitv "a0", Bitv "b0")].
+
+Compute rc_adder_s l c.
+Compute (Signallist2stringlist (fst (rc_adder_s l c))).
+
 Compute sum_split (Signallist2stringlist (fst (rc_adder_s l c))) 2.
 (* assign sum[0] = ((a2)^(b2))^(c);
    assign sum[1] = ((a1)^(b1))^(((a2)&(b2))|(((a2)^(b2))&(c))); *)

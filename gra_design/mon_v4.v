@@ -1065,6 +1065,9 @@ Definition fini : com :=
 result ::= reg_result 【len-1 ：0】;;
 done_flag ::= done.
 
+Check sig.
+Print sig.
+
 
 
 

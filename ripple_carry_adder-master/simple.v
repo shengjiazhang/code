@@ -14,6 +14,7 @@ Import Nat.
 Require Import List.
 Require Import Lia.
 Require Import ArithRing.
+Require Import Classical.
 
 Ltac falseImply :=
   let P := fresh "P" in let H := fresh "H" in
@@ -63,7 +64,13 @@ Qed.
 Lemma nat_split : forall (n:nat), exists k : nat,
   n = 2 * k \/ n = 2 * k + 1.
 Proof.
-intro; induction n.
+  intros. induction n. 
+  - exists 0. left. auto.
+  - inversion IHn. destruct H.
+    * exists x. subst. right. lia. 
+    * exists (x + 1). subst. left. lia.  
+Qed.
+(* intro; induction n.
  exists 0; left; reflexivity. (* base case. *)
  elim IHn. (* instanciate the "exists" hypothesis. *)
    intros. (* move the instanciated assumptions to hypothesis list. *)
@@ -73,7 +80,7 @@ intro; induction n.
     right; rewrite H0; ring. 
   intro; exists (x + 1). (* prove the right of \/ of the goal with x+1. *)
     left; rewrite H0; ring.
-Qed.
+Qed. *)
 
 End SimpleNat.
 
@@ -88,12 +95,16 @@ Implicit Type l : list A.
 Implicit Type n : nat.
 
 Lemma length_nil : forall l, length l = 0 -> l = nil.
-Proof.  (* the proof does not use list induction. *)
-  intro.
+Proof.
+  intros. destruct l.
+  - auto.
+  - inversion H.
+  (* the proof does not use list induction.*)
+(* intro.
   case l.
   intro; trivial.
   intros.
-  discriminate.
+  discriminate. *)
 Qed.
 
 Implicit Type tl : list A.
