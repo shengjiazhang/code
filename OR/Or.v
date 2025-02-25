@@ -18,6 +18,13 @@ Proof. intros. destruct (le_gt_dec y x); auto. Defined.
 
 Infix "?<" := (lt_ge_dec) (at level 30).
 
+(* Definition fin (n : nat) := {i | i < n}.
+
+Lemma test : fin 0 -> False.
+Proof.
+  intros. destruct H. inversion l. 
+Qed. *)
+
 Definition fin (n : nat) :=
   match n with
   | O => unit
