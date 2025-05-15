@@ -171,7 +171,7 @@ Module Export method3.
       | [] => [[]]
       | hl :: tl => concat (map (perm1 hl) (perm tl))
       end.
-  End def.
+    End def.
 
   (* Compute perm1 1 [2;3]. *)
   (* = [[1; 2; 3]; [2; 1; 3]; [2; 3; 1]] : dlist nat *)
