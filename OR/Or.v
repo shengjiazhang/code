@@ -114,7 +114,7 @@ Proof. intros. simpl. destruct f. simpl. auto. Qed.
 
 Lemma fin2nat_lt_n_gt0 : forall {n} (f : fin n), 0 < n -> fin2nat f < n.
 Proof.
-  intros. destruct n.
+intros. destruct n.
   - simpl. auto. 
   - apply fin2nat_lt_Sn.
 Qed.
